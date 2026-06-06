@@ -1,0 +1,26 @@
+name: Fix gh-pages JS Bundle
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Restore correct JS from earlier commit
+        run: |
+          git fetch origin 06eb891f4d3f9c995de09ab1d2d1c12ca37a7c2d
+          git checkout 06eb891f4d3f9c995de09ab1d2d1c12ca37a7c2d -- _expo/static/js/web/AppEntry-c5fc83f02dc00ce9af0b756ab95e918c.js
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add _expo/static/js/web/AppEntry-c5fc83f02dc00ce9af0b756ab95e918c.js
+          git diff --cached --quiet && echo 'No changes needed' || git commit -m 'Deploy PawPack web app (fix asset paths) - restore correct JS bundle'
+          git push origin gh-pages
