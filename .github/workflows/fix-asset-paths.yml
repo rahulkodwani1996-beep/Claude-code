@@ -1,0 +1,43 @@
+name: Fix Asset Paths in gh-pages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fix-paths:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fix asset paths in JS bundle
+        run: |
+          FILE="_expo/static/js/web/AppEntry-c5fc83f02dc00ce9af0b756ab95e918c.js"
+          if [ -f "$FILE" ]; then
+            COUNT=$(grep -c '"/assets/' "$FILE" || true)
+            echo "Found $COUNT occurrences of /assets/ to fix"
+            sed -i 's|"/assets/|"/Claude-code/assets/|g' "$FILE"
+            AFTER=$(grep -c '"/Claude-code/assets/' "$FILE" || true)
+            echo "After fix: $AFTER occurrences of /Claude-code/assets/"
+          else
+            echo "Bundle file not found!"
+            ls _expo/static/js/web/ || true
+            exit 1
+          fi
+
+      - name: Fix index.html script path
+        run: |
+          sed -i 's|src="/_expo/|src="./_expo/|g' index.html
+          grep "script src" index.html
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add _expo/static/js/web/AppEntry-c5fc83f02dc00ce9af0b756ab95e918c.js index.html
+          git diff --cached --stat
+          git commit -m "fix: correct asset paths for GitHub Pages subdirectory" || echo "Nothing to commit"
+          git push origin gh-pages
