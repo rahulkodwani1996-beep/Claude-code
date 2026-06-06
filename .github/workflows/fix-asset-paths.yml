@@ -3,6 +3,9 @@ name: Fix Asset Paths in gh-pages
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   fix-paths:
     runs-on: ubuntu-latest
