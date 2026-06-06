@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "PawPack",
+    "slug": "pawpack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FDFAF6"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.pawpack.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FDFAF6"
+      },
+      "package": "com.pawpack.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "pawpack"
+  }
+}
