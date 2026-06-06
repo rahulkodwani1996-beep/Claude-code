@@ -423,35 +423,133 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 /* ═══════════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════════ */
+
+/* ── Tablet ≤960px ───────────────────────────── */
 @media(max-width:960px){
-  .hero-grid,.grid-2,.guar-inner{grid-template-columns:1fr;gap:36px}
+  .sec{padding:72px 0}
+  .sec-header{margin-bottom:40px}
+  .nav-links{display:none}
+  .hero-grid,.grid-2{grid-template-columns:1fr;gap:28px}
   .hero-visual{display:none}
-  .grid-3,.steps{grid-template-columns:1fr}
+  .hero-sub{max-width:100%}
+  .guar-inner{gap:36px}
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr);gap:28px}
   .steps::before{display:none}
-  .problem-grid{grid-template-columns:1fr}
-  .footer-top{grid-template-columns:1fr 1fr}
-  .price-grid{grid-template-columns:1fr;max-width:460px}
-  .testi-card{flex:0 0 calc(80vw)}
-  .stats-inner{gap:28px}
+  .problem-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-top{grid-template-columns:repeat(2,1fr);gap:28px;padding:48px 0 36px}
+  .price-grid{grid-template-columns:1fr;max-width:480px;margin:0 auto}
+  .testi-card{flex:0 0 calc(50% - 12px)}
+  /* Stats: 2×2 grid */
+  .stats-inner{display:grid;grid-template-columns:repeat(2,1fr);padding:0;gap:0}
+  .stat-item{padding:24px 16px;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .stat-item:nth-child(2n){border-right:none}
+  .stat-item:nth-last-child(-n+2){border-bottom:none}
   .stat-divider{display:none}
   .grid-4{grid-template-columns:repeat(2,1fr)}
 }
+
+/* ── Mobile ≤640px ───────────────────────────── */
 @media(max-width:640px){
-  .sec{padding:64px 0}
-  .sec-sm{padding:44px 0}
-  .footer-top{grid-template-columns:1fr}
-  .footer-bottom{flex-direction:column;align-items:flex-start}
-  .press-inner{flex-direction:column;align-items:flex-start;gap:20px}
-  .testi-card{flex:0 0 90vw}
-  .guar-inner{flex-direction:column;text-align:center}
-  .guar-checks{align-items:center}
-  .grid-4{grid-template-columns:1fr}
-  .timer-bar{flex-direction:column;text-align:center}
-}
-@media(min-width:640px) and (max-width:960px){
-  .grid-3{grid-template-columns:repeat(2,1fr)}
-  .steps{grid-template-columns:repeat(2,1fr)}
-  .testi-card{flex:0 0 calc(50% - 12px)}
+  /* Global */
+  .sec{padding:48px 0}
+  .sec-sm{padding:32px 0}
+  .sec-header{margin-bottom:24px}
+  .sec-header.center{margin-bottom:24px}
+  .wrap,.wrap-sm{padding:0 16px}
+
+  /* Nav */
+  .nav-inner{height:58px}
+  .nav-name{font-size:1.1rem}
+
+  /* Hero */
+  #hero{padding:36px 0 40px}
+  .hero-grid{gap:0}
+  .d1{font-size:clamp(2.5rem,9vw,3rem)}
+  .hero-rating{margin-bottom:12px}
+  .hero-sub{font-size:.93rem;margin-bottom:16px;line-height:1.6}
+  .hero-checks{gap:8px;margin-bottom:20px}
+  .chk{font-size:.875rem}
+  .hero-cta-row{flex-direction:column;align-items:stretch;gap:10px;margin-bottom:14px}
+  .btn-lg{font-size:.93rem;padding:15px 22px}
+  .btn-ghost{display:none}
+  .hero-price-note{font-size:.72rem}
+  .hero-trust{flex-wrap:wrap;padding-top:14px;gap:8px}
+  .trust-copy{font-size:.74rem}
+
+  /* Stats */
+  .stat-num{font-size:1.9rem}
+  .stat-item{padding:16px 12px}
+  .stat-label{font-size:.72rem;letter-spacing:.04em}
+
+  /* Press */
+  #press{padding:18px 0}
+  .press-inner{flex-direction:column;gap:10px}
+  .press-logos{overflow-x:auto;flex-wrap:nowrap;gap:20px;padding-bottom:4px;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .press-logos::-webkit-scrollbar{display:none}
+
+  /* Problem */
+  .problem-grid{grid-template-columns:1fr;gap:12px}
+  .prob-card{padding:16px}
+  .prob-ico{width:40px;height:40px;border-radius:10px;margin-bottom:10px}
+  .prob-ico svg{width:22px;height:22px}
+  .prob-solution-box{padding:20px 18px}
+
+  /* Steps — horizontal layout on mobile */
+  .steps{grid-template-columns:1fr;gap:18px}
+  .step{display:flex;align-items:flex-start;gap:14px;text-align:left}
+  .step-num{width:46px;height:46px;font-size:1.5rem;flex-shrink:0;margin:0;
+    box-shadow:0 0 0 5px var(--off),0 0 0 7px var(--green)}
+
+  /* Science */
+  .grid-3{grid-template-columns:1fr}
+  .sci-card{padding:20px}
+  .sci-ico{width:52px;height:52px;border-radius:12px;margin-bottom:14px}
+
+  /* Testimonials */
+  .testi-card{flex:0 0 86vw;padding:18px}
+  .testi-quote{font-size:.875rem;margin:10px 0 14px}
+  .testi-badge{display:none}
+  .testi-meta{font-size:.7rem}
+
+  /* Guarantee */
+  .guar-inner{flex-direction:column;align-items:center;text-align:center;gap:24px}
+  .guar-checks{align-items:flex-start;text-align:left}
+  .guar-badge{width:130px;height:130px;
+    box-shadow:0 0 0 8px rgba(29,185,84,.12),0 0 0 16px rgba(29,185,84,.06)}
+  .guar-badge .num{font-size:2.8rem}
+  .guar-badge .day{font-size:1rem}
+  .guar-body{font-size:.88rem;margin-bottom:16px}
+
+  /* Pricing */
+  .timer-bar{flex-direction:column;align-items:center;gap:10px;
+    padding:12px 14px;margin-bottom:28px;text-align:center}
+  .price-grid{max-width:100%;gap:40px}
+  .pcard{padding:24px 18px}
+  .pcard-val{font-size:2.6rem}
+  .pcard-feats{gap:9px;margin-bottom:24px}
+  .price-trust{gap:12px;justify-content:flex-start}
+  .pt-item{font-size:.74rem;gap:5px}
+  .pt-item svg{width:14px;height:14px;flex-shrink:0}
+
+  /* FAQ */
+  .faq-q{padding:14px 16px;gap:12px}
+  .faq-q-text{font-size:.875rem}
+  .faq-ans-inner{padding:0 16px 16px;font-size:.84rem}
+
+  /* Footer */
+  .footer-top{grid-template-columns:1fr;gap:22px;padding:32px 0 24px}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:10px;padding:18px 0}
+  .footer-certs{flex-wrap:wrap;gap:6px}
+  .footer-brand-tagline{font-size:.82rem}
+
+  /* Sticky bar */
+  #sticky-bar{padding:9px 14px}
+  .sb-prod{font-size:.85rem}
+
+  /* d3 headings */
+  .d3{font-size:clamp(1.7rem,6vw,2.2rem)}
 }
 </style>
 </head>
