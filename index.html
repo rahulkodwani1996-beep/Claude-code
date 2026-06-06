@@ -1,1030 +1,1134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Feline Gut Boost — End Your Cat's Gut Misery For Good</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feline Gut Boost — Probiotic Cat Food Topper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-/* ═══════════════════════════════════════════════
-   TOKENS
-═══════════════════════════════════════════════ */
+/* ─── TOKENS ──────────────────────────────────────────────── */
 :root{
-  --navy:   #08192F;
-  --navy2:  #0E2448;
-  --navy3:  #162F5A;
-  --green:  #1DB954;
-  --green2: #17A349;
-  --green3: #0D8A3C;
-  --green-t:#E8F9EE;
-  --orange: #F97316;
-  --orange2:#EA6A0C;
-  --gold:   #F5C518;
-  --white:  #FFFFFF;
-  --off:    #F4F7FB;
-  --off2:   #EBF0F8;
-  --text:   #0D1B2A;
-  --muted:  #64748B;
-  --border: #DDE3ED;
-  --r:      14px;
-  --r2:     22px;
-  --sh:     0 4px 28px rgba(0,0,0,.07);
-  --sh2:    0 12px 48px rgba(0,0,0,.13);
+  --white:#FFFFFF;
+  --cream:#F8F5F1;
+  --cream2:#EDE9E3;
+  --cream3:#E2DDD6;
+  --navy:#0B1F3A;
+  --navy2:#162F5A;
+  --navy3:#0D1525;
+  --green:#1DB954;
+  --green-dk:#17A349;
+  --green-lt:#E6F9EE;
+  --orange:#F97316;
+  --gold:#F5C518;
+  --red:#EF4444;
+  --text:#1A1A1A;
+  --text2:#4B5563;
+  --text3:#9CA3AF;
+  --border:#E2E2E2;
+  --border2:#D1D5DB;
+  --r:8px;
+  --r2:14px;
+  --r3:20px;
+  --shadow:0 2px 12px rgba(0,0,0,.08);
+  --shadow2:0 8px 32px rgba(0,0,0,.12);
 }
-
-/* ═══════════════════════════════════════════════
-   RESET
-═══════════════════════════════════════════════ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Nunito',sans-serif;background:#fff;color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}
+body{font-family:'Inter',sans-serif;color:var(--text);background:var(--cream);line-height:1.6;overflow-x:hidden}
 img{display:block;max-width:100%}
 a{text-decoration:none;color:inherit}
+button{cursor:pointer;font-family:inherit;border:none;outline:none}
 ul{list-style:none}
-button{cursor:pointer;border:none;background:none;font-family:inherit}
 
-/* ═══════════════════════════════════════════════
-   TYPOGRAPHY
-═══════════════════════════════════════════════ */
-.d1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3.2rem,8vw,6rem);line-height:.96;letter-spacing:.02em}
-.d2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.4rem,5vw,4rem);line-height:1;letter-spacing:.02em}
-.d3{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:1.05;letter-spacing:.02em}
-.body-lg{font-size:1.1rem;line-height:1.7}
-.body-sm{font-size:.875rem;line-height:1.6}
-.label{font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+/* ─── TYPOGRAPHY ──────────────────────────────────────────── */
+h1,h2,h3,h4{font-family:'Sora',sans-serif;line-height:1.15}
+.eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+.tag-pill{display:inline-flex;align-items:center;gap:6px;background:var(--green-lt);color:var(--green-dk);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:999px}
 
-/* ═══════════════════════════════════════════════
-   LAYOUT
-═══════════════════════════════════════════════ */
-.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
-.wrap-sm{max-width:760px;margin:0 auto;padding:0 24px}
-.sec{padding:96px 0}
-.sec-sm{padding:64px 0}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+/* ─── LAYOUT UTILS ────────────────────────────────────────── */
+.container{max-width:1180px;margin:0 auto;padding:0 24px}
+.sec{padding:80px 0}
+.sec-sm{padding:56px 0}
 
-/* ═══════════════════════════════════════════════
-   BUTTONS
-═══════════════════════════════════════════════ */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;border-radius:100px;transition:all .22s cubic-bezier(.4,0,.2,1);white-space:nowrap}
-.btn-green{background:var(--green);color:#fff;padding:17px 36px;box-shadow:0 4px 20px rgba(29,185,84,.38)}
-.btn-green:hover{background:var(--green2);transform:translateY(-2px);box-shadow:0 8px 32px rgba(29,185,84,.5)}
-.btn-green:active{transform:translateY(0)}
-.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:2px solid rgba(255,255,255,.3);padding:15px 32px}
-.btn-ghost:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.6)}
-.btn-lg{font-size:1.15rem;padding:20px 44px}
-.btn-sm{font-size:.85rem;padding:11px 24px}
-.btn-orange{background:var(--orange);color:#fff;padding:17px 36px;box-shadow:0 4px 20px rgba(249,115,22,.38)}
-.btn-orange:hover{background:var(--orange2);transform:translateY(-2px);box-shadow:0 8px 32px rgba(249,115,22,.5)}
+/* ─── ANNOUNCEMENT BAR ────────────────────────────────────── */
+#ann-bar{background:var(--navy);color:#fff;padding:10px 0;overflow:hidden;position:relative;z-index:200}
+.ann-track{display:flex;gap:0;white-space:nowrap;animation:ticker 32s linear infinite}
+.ann-track:hover{animation-play-state:paused}
+.ann-item{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;letter-spacing:.04em;padding:0 48px}
+.ann-item span{color:var(--gold)}
+.ann-sep{color:var(--green);opacity:.7;font-size:1rem}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-/* ═══════════════════════════════════════════════
-   BADGES / PILLS
-═══════════════════════════════════════════════ */
-.pill{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;border-radius:100px;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
-.pill-green{background:var(--green-t);color:var(--green3)}
-.pill-orange{background:#FFF3E8;color:var(--orange2)}
-.pill-navy{background:var(--navy);color:#fff}
-.pill-white{background:rgba(255,255,255,.15);color:#fff}
+/* ─── NAVIGATION ──────────────────────────────────────────── */
+#nav{position:sticky;top:0;z-index:190;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:62px}
+.nav-logo{display:flex;align-items:center;gap:10px;font-family:'Sora',sans-serif;font-size:1.1rem;font-weight:800;color:var(--navy);letter-spacing:-.01em}
+.logo-mark{width:36px;height:36px;background:var(--green);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-size:.85rem;font-weight:600;color:var(--text2);transition:color .2s}
+.nav-links a:hover{color:var(--navy)}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-cta{background:var(--green);color:#fff;font-size:.82rem;font-weight:700;padding:9px 20px;border-radius:var(--r);transition:background .2s}
+.nav-cta:hover{background:var(--green-dk)}
+.hamburger{display:none;flex-direction:column;gap:5px;width:28px;cursor:pointer;padding:4px}
+.hamburger span{display:block;height:2px;background:var(--navy);border-radius:2px;transition:all .3s}
 
-/* ═══════════════════════════════════════════════
-   STARS
-═══════════════════════════════════════════════ */
-.stars{display:flex;gap:2px}
-.star{color:var(--gold);font-size:1.1rem}
-.star-sm{font-size:.85rem}
-.rating-row{display:flex;align-items:center;gap:10px}
-.rating-count{font-size:.85rem;font-weight:700;color:var(--muted)}
+/* ─── NAV DRAWER ──────────────────────────────────────────── */
+#nav-drawer{position:fixed;inset:0;z-index:300;pointer-events:none}
+.drawer-overlay{position:absolute;inset:0;background:rgba(0,0,0,.45);opacity:0;transition:opacity .3s}
+.drawer-panel{position:absolute;top:0;left:0;width:300px;height:100%;background:#fff;transform:translateX(-100%);transition:transform .3s cubic-bezier(.25,.46,.45,.94);padding:24px;display:flex;flex-direction:column;gap:20px}
+.drawer-head{display:flex;align-items:center;justify-content:space-between}
+.drawer-close{width:32px;height:32px;border-radius:50%;background:var(--cream);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--text2);border:none;cursor:pointer}
+.drawer-links{display:flex;flex-direction:column;gap:4px}
+.drawer-links a{font-size:1rem;font-weight:600;color:var(--text);padding:12px 0;border-bottom:1px solid var(--border)}
+.drawer-links a:last-child{border-bottom:none}
+#nav-drawer.open{pointer-events:all}
+#nav-drawer.open .drawer-overlay{opacity:1}
+#nav-drawer.open .drawer-panel{transform:translateX(0)}
 
-/* ═══════════════════════════════════════════════
-   CHECK MARK
-═══════════════════════════════════════════════ */
-.chk{display:flex;align-items:flex-start;gap:10px;font-size:.975rem;font-weight:600;color:#fff;line-height:1.5}
-.chk-ico{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;margin-top:2px}
-.chk-ico-dark{background:var(--green-t)}
-.chk-ico svg{width:11px;height:11px}
+/* ─── PDP HERO ────────────────────────────────────────────── */
+#hero{background:var(--cream);padding:40px 0 60px}
+.pdp-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
 
-/* ═══════════════════════════════════════════════
-   ANNOUNCEMENT BAR
-═══════════════════════════════════════════════ */
-#ann{background:var(--green);overflow:hidden;height:40px;display:flex;align-items:center}
-.ann-track{display:flex;gap:60px;animation:ann 22s linear infinite;white-space:nowrap}
-.ann-item{display:flex;align-items:center;gap:8px;color:#fff;font-size:.82rem;font-weight:800;letter-spacing:.04em}
-@keyframes ann{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* Gallery */
+.pdp-gallery{position:sticky;top:80px}
+.gallery-main{position:relative;background:#fff;border-radius:var(--r2);overflow:hidden;aspect-ratio:1;border:1px solid var(--border)}
+.gallery-badges{position:absolute;top:14px;left:14px;display:flex;flex-direction:column;gap:6px;z-index:2}
+.g-badge{background:var(--navy);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:var(--r)}
+.g-badge.green{background:var(--green)}
+.g-badge.orange{background:var(--orange)}
+.gallery-product{width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:30px}
+.gallery-thumbs{display:flex;gap:8px;margin-top:10px}
+.g-thumb{flex:1;aspect-ratio:1;background:#fff;border-radius:var(--r);border:2px solid var(--border);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .2s;overflow:hidden}
+.g-thumb.active,.g-thumb:hover{border-color:var(--green)}
 
-/* ═══════════════════════════════════════════════
-   NAV
-═══════════════════════════════════════════════ */
-#nav{position:sticky;top:0;z-index:900;transition:background .3s,box-shadow .3s;padding:0}
-#nav.solid{background:#fff;box-shadow:0 2px 20px rgba(0,0,0,.09)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
-.nav-logo{display:flex;align-items:center;gap:10px}
-.nav-logo-mark{width:38px;height:38px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center}
-.nav-logo-mark svg{width:20px;height:20px}
-.nav-name{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.06em}
-.nav-name span{color:var(--green)}
-.nav-links{display:flex;gap:32px;align-items:center}
-.nav-link{font-weight:700;font-size:.9rem;color:var(--text);opacity:.75;transition:opacity .2s}
-.nav-link:hover{opacity:1}
-.nav-cta{font-size:.875rem;padding:10px 22px}
-/* nav is transparent over hero, solid elsewhere */
-#nav:not(.solid) .nav-name{color:#fff}
-#nav:not(.solid) .nav-logo-mark{box-shadow:0 0 0 3px rgba(255,255,255,.2)}
-#nav:not(.solid) .nav-link{color:#fff;opacity:.8}
-#nav:not(.solid) .nav-link:hover{opacity:1}
+/* PDP Info */
+.pdp-info{}
+.pdp-breadcrumb{font-size:.75rem;color:var(--text3);margin-bottom:14px}
+.pdp-breadcrumb span{color:var(--text2)}
+.pdp-title{font-size:clamp(1.7rem,3vw,2.3rem);font-weight:800;color:var(--navy);margin:10px 0 6px;line-height:1.15}
+.pdp-subtitle{font-size:.92rem;color:var(--text2);margin-bottom:16px;line-height:1.6}
+.pdp-stars{display:flex;align-items:center;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.stars{color:var(--gold);font-size:.95rem;letter-spacing:.05em}
+.star-count{font-size:.82rem;font-weight:600;color:var(--text2)}
+.star-count a{color:var(--green);text-decoration:underline}
+.verified-tag{background:var(--green-lt);color:var(--green-dk);font-size:.68rem;font-weight:700;padding:3px 8px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
 
-/* ═══════════════════════════════════════════════
-   HERO
-═══════════════════════════════════════════════ */
-#hero{
-  background: radial-gradient(ellipse at 70% 50%, #163560 0%, #0B2040 55%, #060F1E 100%);
-  position:relative;overflow:hidden;padding:80px 0 64px;
-}
-#hero::before{
-  content:'';position:absolute;inset:0;
-  background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
-  background-size:32px 32px;pointer-events:none;
-}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;position:relative;z-index:1}
-.hero-rating{display:flex;align-items:center;gap:10px;margin-bottom:18px}
-.hero-rating-text{color:rgba(255,255,255,.7);font-size:.875rem;font-weight:700}
-.hero-rating-text strong{color:#fff}
-.hero-hl{color:#fff;margin-bottom:6px}
-.hero-hl .accent{color:var(--green)}
-.hero-sub{color:rgba(255,255,255,.68);font-size:1.05rem;margin-bottom:28px;max-width:480px;line-height:1.65}
-.hero-checks{display:flex;flex-direction:column;gap:11px;margin-bottom:36px}
-.hero-cta-row{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:28px}
-.hero-price-note{color:rgba(255,255,255,.5);font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
-.hero-trust{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1)}
-.trust-ava{display:flex}
-.trust-ava span{width:30px;height:30px;border-radius:50%;background:var(--navy3);border:2px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:800;color:#fff;margin-left:-8px}
-.trust-ava span:first-child{margin-left:0}
-.trust-copy{font-size:.8rem;color:rgba(255,255,255,.6);font-weight:600}
-.trust-copy strong{color:#fff}
+/* Purchase toggle */
+.purchase-toggle{background:#fff;border:1px solid var(--border);border-radius:var(--r2);padding:16px;margin-bottom:18px}
+.toggle-label{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:10px}
+.toggle-options{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.toggle-opt{position:relative}
+.toggle-opt input{position:absolute;opacity:0;width:0;height:0}
+.toggle-opt label{display:block;border:2px solid var(--border);border-radius:var(--r);padding:12px 14px;cursor:pointer;transition:all .2s}
+.toggle-opt input:checked + label{border-color:var(--green);background:var(--green-lt)}
+.tog-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+.tog-name{font-size:.8rem;font-weight:700;color:var(--navy)}
+.tog-save{background:var(--green);color:#fff;font-size:.6rem;font-weight:700;padding:2px 7px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
+.tog-price{font-size:1.1rem;font-weight:800;color:var(--navy)}
+.tog-note{font-size:.72rem;color:var(--text2);line-height:1.4}
 
-/* Product visual */
-.hero-visual{position:relative;display:flex;justify-content:center;align-items:center}
-.hero-glow{
-  width:340px;height:340px;border-radius:50%;
-  background:radial-gradient(circle, rgba(29,185,84,.28) 0%, transparent 70%);
-  position:absolute;
-}
-.hero-pouch{position:relative;z-index:2;filter:drop-shadow(0 24px 48px rgba(0,0,0,.5))}
-.hero-pouch svg{width:200px}
-.hero-float{position:absolute;z-index:3;background:rgba(255,255,255,.08);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:10px 14px;white-space:nowrap}
-.hero-float .hf-label{font-size:.65rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:2px}
-.hero-float .hf-val{font-size:.9rem;font-weight:800;color:#fff}
-.hf1{top:10%;left:-10%}
-.hf2{bottom:18%;right:-10%}
-.hf3{top:50%;left:-15%;transform:translateY(-50%)}
+/* Size selector */
+.size-row{margin-bottom:18px}
+.size-label{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:8px}
+.size-btns{display:flex;gap:8px;flex-wrap:wrap}
+.size-btn{padding:8px 18px;border:2px solid var(--border);border-radius:var(--r);font-size:.82rem;font-weight:600;color:var(--text);background:#fff;transition:all .2s;cursor:pointer}
+.size-btn.active,.size-btn:hover{border-color:var(--green);color:var(--green-dk);background:var(--green-lt)}
 
-/* ═══════════════════════════════════════════════
-   STATS BAR
-═══════════════════════════════════════════════ */
-#stats{background:#fff;border-bottom:1px solid var(--border)}
-.stats-inner{display:flex;justify-content:space-around;align-items:center;padding:32px 0;gap:16px;flex-wrap:wrap}
-.stat-item{text-align:center}
-.stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:var(--navy);letter-spacing:.02em;line-height:1}
-.stat-num span{color:var(--green)}
-.stat-label{font-size:.82rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-top:4px}
-.stat-divider{width:1px;height:52px;background:var(--border);flex-shrink:0}
+/* Price display */
+.price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:20px;flex-wrap:wrap}
+.price-main{font-size:1.9rem;font-weight:800;font-family:'Sora',sans-serif;color:var(--navy)}
+.price-orig{font-size:1rem;color:var(--text3);text-decoration:line-through}
+.price-badge{background:var(--orange);color:#fff;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:999px}
 
-/* ═══════════════════════════════════════════════
-   PRESS BAR
-═══════════════════════════════════════════════ */
-#press{background:var(--off);padding:32px 0}
-.press-inner{display:flex;align-items:center;gap:40px;flex-wrap:wrap}
-.press-label{font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);flex-shrink:0;white-space:nowrap}
-.press-logos{display:flex;align-items:center;gap:36px;flex-wrap:wrap}
-.press-logo{display:flex;align-items:center;gap:8px;opacity:.35;filter:grayscale(1);transition:opacity .2s}
-.press-logo:hover{opacity:.6}
-.press-logo-box{width:34px;height:34px;background:var(--navy);border-radius:6px;display:flex;align-items:center;justify-content:center}
-.press-logo-box svg{width:18px;height:18px}
-.press-logo-name{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:.06em;color:var(--navy)}
+/* Qty + ATC */
+.qty-atc{display:flex;gap:10px;margin-bottom:14px}
+.qty-wrap{display:flex;align-items:center;border:2px solid var(--border);border-radius:var(--r);overflow:hidden;background:#fff}
+.qty-btn{width:40px;height:50px;font-size:1.2rem;font-weight:700;background:#fff;color:var(--navy);display:flex;align-items:center;justify-content:center;transition:background .2s;border:none;cursor:pointer}
+.qty-btn:hover{background:var(--cream)}
+.qty-num{width:44px;height:50px;display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:700;color:var(--navy);border-left:1px solid var(--border);border-right:1px solid var(--border)}
+.btn-atc{flex:1;background:var(--green);color:#fff;font-size:.92rem;font-weight:700;height:50px;border-radius:var(--r);letter-spacing:.02em;transition:background .2s;font-family:'Sora',sans-serif;border:none;cursor:pointer}
+.btn-atc:hover{background:var(--green-dk)}
+.btn-buynow{width:100%;background:var(--navy);color:#fff;font-size:.92rem;font-weight:700;height:50px;border-radius:var(--r);letter-spacing:.02em;margin-bottom:20px;transition:background .2s;font-family:'Sora',sans-serif;border:none;cursor:pointer}
+.btn-buynow:hover{background:var(--navy2)}
 
-/* ═══════════════════════════════════════════════
-   PROBLEM SECTION
-═══════════════════════════════════════════════ */
-#problem{background:#fff}
-.sec-header{margin-bottom:56px}
-.sec-header.center{text-align:center}
-.sec-eyebrow{margin-bottom:12px}
-.sec-title{color:var(--navy);margin-bottom:14px}
-.sec-body{color:var(--muted);font-size:1.05rem;max-width:560px}
-.sec-header.center .sec-body{margin:0 auto}
-.problem-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.prob-card{background:var(--off);border-radius:var(--r);padding:28px;border:2px solid transparent;transition:border-color .2s,box-shadow .2s}
-.prob-card:hover{border-color:var(--orange);box-shadow:0 4px 24px rgba(249,115,22,.1)}
-.prob-ico{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-.prob-ico svg{width:26px;height:26px}
-.prob-title{font-weight:900;font-size:1rem;color:var(--navy);margin-bottom:6px}
-.prob-text{font-size:.875rem;color:var(--muted);line-height:1.65}
-.problem-right{display:flex;flex-direction:column;justify-content:center;gap:20px}
-.prob-solution-box{background:linear-gradient(135deg,var(--navy) 0%,var(--navy3) 100%);border-radius:var(--r2);padding:36px;color:#fff}
-.prob-solution-box .d3{color:#fff;margin-bottom:8px}
-.prob-solution-box .d3 span{color:var(--green)}
-.prob-sol-sub{color:rgba(255,255,255,.65);font-size:.95rem;margin-bottom:24px}
+/* Trust grid */
+.trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.trust-item{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:10px 12px}
+.trust-icon{font-size:1.2rem;flex-shrink:0}
+.trust-text{font-size:.75rem;font-weight:600;color:var(--text);line-height:1.3}
+.trust-text small{display:block;font-weight:400;color:var(--text3);font-size:.68rem}
 
-/* ═══════════════════════════════════════════════
-   HOW IT WORKS
-═══════════════════════════════════════════════ */
-#how{background:var(--off)}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;position:relative}
-.steps::before{content:'';position:absolute;top:36px;left:calc(16.66% + 16px);right:calc(16.66% + 16px);height:2px;background:linear-gradient(90deg,var(--green),var(--green2));border-radius:2px;z-index:0}
-.step{text-align:center;position:relative;z-index:1}
-.step-num{width:72px;height:72px;border-radius:50%;background:var(--green);color:#fff;font-family:'Bebas Neue',sans-serif;font-size:2.2rem;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 0 0 6px var(--off),0 0 0 8px var(--green);letter-spacing:.02em}
-.step-title{font-weight:900;font-size:1.05rem;color:var(--navy);margin-bottom:8px}
-.step-text{font-size:.88rem;color:var(--muted);line-height:1.65}
+/* Accordion */
+.pdp-accordions{border-top:1px solid var(--border)}
+.acc-item{border-bottom:1px solid var(--border)}
+.acc-head{display:flex;align-items:center;justify-content:space-between;padding:14px 0;cursor:pointer;user-select:none}
+.acc-head h4{font-size:.88rem;font-weight:700;color:var(--navy)}
+.acc-arrow{font-size:.9rem;color:var(--text3);transition:transform .3s;flex-shrink:0}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.25,.46,.45,.94)}
+.acc-body-inner{padding:0 0 16px;font-size:.85rem;color:var(--text2);line-height:1.7}
+.acc-item.open .acc-arrow{transform:rotate(180deg)}
+.acc-list{display:flex;flex-direction:column;gap:6px}
+.acc-list li{display:flex;align-items:flex-start;gap:8px}
+.acc-list li::before{content:"✓";color:var(--green);font-weight:700;flex-shrink:0;margin-top:1px}
 
-/* ═══════════════════════════════════════════════
-   INGREDIENTS / SCIENCE
-═══════════════════════════════════════════════ */
-#science{background:#fff}
-.sci-card{background:var(--off);border-radius:var(--r2);padding:32px;border:2px solid transparent;transition:all .25s;position:relative;overflow:hidden}
-.sci-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .3s}
-.sci-card:hover{border-color:rgba(29,185,84,.25);box-shadow:0 8px 40px rgba(29,185,84,.1);transform:translateY(-4px)}
-.sci-card:hover::before{transform:scaleX(1)}
-.sci-ico{width:64px;height:64px;border-radius:16px;background:var(--green-t);display:flex;align-items:center;justify-content:center;margin-bottom:22px}
-.sci-ico svg{width:32px;height:32px}
-.sci-title{font-weight:900;font-size:1.15rem;color:var(--navy);margin-bottom:10px}
-.sci-body{font-size:.9rem;color:var(--muted);line-height:1.7;margin-bottom:16px}
-.sci-tag{display:inline-flex;align-items:center;gap:5px;background:var(--green-t);color:var(--green3);font-size:.73rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:4px 12px;border-radius:100px}
+/* ─── TRUST STRIP ─────────────────────────────────────────── */
+#trust-strip{background:var(--navy);padding:28px 0}
+.trust-strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.ts-item{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;padding:20px 16px;border-right:1px solid rgba(255,255,255,.1)}
+.ts-item:last-child{border-right:none}
+.ts-icon{font-size:2rem;line-height:1}
+.ts-val{font-family:'Sora',sans-serif;font-size:1.3rem;font-weight:800;color:var(--gold)}
+.ts-desc{font-size:.72rem;font-weight:600;color:rgba(255,255,255,.65);letter-spacing:.06em;text-transform:uppercase;line-height:1.4}
 
-/* ═══════════════════════════════════════════════
-   COMPARISON TABLE
-═══════════════════════════════════════════════ */
-#compare{background:var(--off)}
-.cmp-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
-.cmp-table{width:100%;border-collapse:separate;border-spacing:0;min-width:560px}
-.cmp-table th{padding:14px 20px;font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:center}
-.cmp-table th:first-child{text-align:left}
-.cmp-table th.col-us{background:var(--navy);color:#fff;border-radius:12px 12px 0 0;padding-top:20px}
-.cmp-table td{padding:14px 20px;border-bottom:1px solid var(--border);font-size:.9rem;font-weight:700;color:var(--text);text-align:center;background:#fff;transition:background .15s}
-.cmp-table td:first-child{text-align:left;color:var(--muted)}
-.cmp-table td.col-us{background:#F0FDF5;font-weight:800;color:var(--green3)}
-.cmp-table tr:hover td{background:#FAFBFC}
-.cmp-table tr:hover td.col-us{background:#E6FAF0}
-.cmp-table tr:last-child td:first-child{border-radius:0 0 0 12px}
-.cmp-table tr:last-child td:last-child{border-radius:0 0 12px 0}
-.cmp-table tr:last-child td.col-us{border-radius:0 0 12px 12px}
-.ico-yes{color:var(--green);font-size:1.2rem}
-.ico-no{color:#CBD5E1;font-size:1.2rem}
+/* ─── PRESS MARQUEE ───────────────────────────────────────── */
+#press{background:var(--cream2);padding:24px 0;border-top:1px solid var(--cream3);border-bottom:1px solid var(--cream3);overflow:hidden;position:relative}
+#press::before,#press::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
+#press::before{left:0;background:linear-gradient(to right,var(--cream2),transparent)}
+#press::after{right:0;background:linear-gradient(to left,var(--cream2),transparent)}
+.press-label{text-align:center;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:14px}
+.press-track{display:flex;gap:0;white-space:nowrap;animation:ticker 22s linear infinite}
+.press-track:hover{animation-play-state:paused}
+.press-item{display:inline-flex;align-items:center;padding:0 36px;font-family:'Sora',sans-serif;font-size:.95rem;font-weight:700;color:var(--text3);letter-spacing:.04em;text-transform:uppercase;transition:color .2s}
+.press-item:hover{color:var(--text)}
 
-/* ═══════════════════════════════════════════════
-   TESTIMONIALS
-═══════════════════════════════════════════════ */
-#testi{background:linear-gradient(160deg, var(--navy) 0%, #0D2247 100%);overflow:hidden}
-.testi-slider-vp{overflow:hidden}
-.testi-track{display:flex;gap:24px;transition:transform .45s cubic-bezier(.25,.46,.45,.94)}
-.testi-card{
-  flex:0 0 calc(33.333% - 16px);
-  background:rgba(255,255,255,.05);
-  border:1px solid rgba(255,255,255,.09);
-  border-radius:var(--r2);padding:32px;
-  backdrop-filter:blur(6px);
-}
-.testi-quote{font-size:.97rem;color:rgba(255,255,255,.85);line-height:1.75;margin:14px 0 24px;font-style:italic;font-weight:600}
-.testi-quote::before{content:'\201C';font-family:'Bebas Neue',sans-serif;font-size:2.4rem;color:var(--green);line-height:0;vertical-align:-.5rem;margin-right:4px}
-.testi-footer{display:flex;align-items:center;gap:12px}
-.testi-ava{width:44px;height:44px;border-radius:50%;background:var(--navy3);border:2px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.88rem;color:#fff;flex-shrink:0}
-.testi-name{font-weight:800;font-size:.9rem;color:#fff}
-.testi-meta{font-size:.75rem;color:rgba(255,255,255,.4);font-weight:600}
-.testi-badge{margin-left:auto;background:rgba(29,185,84,.15);border:1px solid rgba(29,185,84,.3);color:var(--green);font-size:.68rem;font-weight:800;padding:3px 9px;border-radius:100px;letter-spacing:.05em;white-space:nowrap}
-.slider-ctrl{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:40px}
-.s-btn{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:#fff;display:flex;align-items:center;justify-content:center;transition:all .2s}
-.s-btn:hover{background:var(--green);border-color:var(--green)}
-.s-dots{display:flex;gap:7px}
-.s-dot{width:7px;height:7px;border-radius:100px;background:rgba(255,255,255,.2);transition:all .25s;cursor:pointer;border:none}
-.s-dot.on{background:var(--green);width:22px}
+/* ─── INGREDIENT SPOTLIGHT ────────────────────────────────── */
+#ingredients{background:#fff}
+.ing-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.ing-wheel{position:relative;display:flex;align-items:center;justify-content:center;min-height:360px}
+.wheel-svg{width:100%;max-width:380px}
+.ing-list{display:flex;flex-direction:column;gap:14px;margin-top:24px}
+.ing-item{display:flex;align-items:center;gap:14px;background:var(--cream);border-radius:var(--r);padding:14px 16px}
+.ing-item-icon{width:42px;height:42px;border-radius:10px;background:#fff;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+.ing-item-text h4{font-size:.88rem;font-weight:700;color:var(--navy);margin-bottom:2px}
+.ing-item-text p{font-size:.78rem;color:var(--text2);line-height:1.4}
 
-/* ═══════════════════════════════════════════════
-   GUARANTEE
-═══════════════════════════════════════════════ */
-#guarantee{background:var(--green-t)}
-.guar-inner{display:flex;align-items:center;gap:56px}
-.guar-badge-wrap{flex-shrink:0}
-.guar-badge{width:180px;height:180px;border-radius:50%;background:var(--green);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 0 12px rgba(29,185,84,.15),0 0 0 24px rgba(29,185,84,.07);text-align:center;padding:16px}
-.guar-badge .num{font-family:'Bebas Neue',sans-serif;font-size:3.8rem;color:#fff;line-height:1;letter-spacing:.02em}
-.guar-badge .day{font-family:'Bebas Neue',sans-serif;font-size:1.15rem;color:rgba(255,255,255,.8);letter-spacing:.1em}
-.guar-badge .back{font-size:.65rem;font-weight:800;letter-spacing:.1em;color:rgba(255,255,255,.7);text-transform:uppercase;margin-top:2px}
-.guar-text .d3{color:var(--navy);margin-bottom:12px}
-.guar-text .d3 span{color:var(--green)}
-.guar-body{color:var(--muted);font-size:1rem;margin-bottom:24px;max-width:500px;line-height:1.7}
-.guar-checks{display:flex;flex-direction:column;gap:10px}
-.guar-chk{display:flex;align-items:center;gap:10px;font-size:.95rem;font-weight:700;color:var(--navy)}
-.guar-chk-ico{width:20px;height:20px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.guar-chk-ico svg{width:10px;height:10px}
+/* ─── BENEFITS GRID ───────────────────────────────────────── */
+#benefits{background:var(--cream)}
+.ben-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.ben-card{background:#fff;border:1px solid var(--border);border-radius:var(--r2);padding:28px 24px;transition:all .25s;cursor:default}
+.ben-card:hover{border-color:var(--green);background:var(--green-lt);transform:translateY(-3px);box-shadow:var(--shadow2)}
+.ben-card:hover .ben-icon{background:var(--green);color:#fff}
+.ben-card:hover .ben-title{color:var(--green-dk)}
+.ben-icon{width:52px;height:52px;background:var(--cream);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:16px;transition:all .25s}
+.ben-title{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px;transition:color .25s}
+.ben-desc{font-size:.82rem;color:var(--text2);line-height:1.6}
 
-/* ═══════════════════════════════════════════════
-   PRICING
-═══════════════════════════════════════════════ */
-#pricing{background:#fff}
-.timer-bar{background:var(--navy);border-radius:var(--r);padding:16px 24px;display:flex;align-items:center;justify-content:space-between;margin-bottom:44px;flex-wrap:wrap;gap:12px}
-.timer-text{color:#fff;font-weight:800;font-size:.9rem;display:flex;align-items:center;gap:8px}
-.timer-text svg{color:var(--orange)}
-.timer-blocks{display:flex;gap:8px;align-items:center}
-.t-blk{background:rgba(255,255,255,.1);border-radius:8px;padding:8px 12px;text-align:center;min-width:52px}
-.t-blk .t-num{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:#fff;line-height:1}
-.t-blk .t-lbl{font-size:.6rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45)}
-.t-sep{color:rgba(255,255,255,.4);font-family:'Bebas Neue',sans-serif;font-size:1.6rem}
-.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:800px;margin:0 auto}
-.pcard{background:var(--off);border-radius:var(--r2);padding:40px 36px;border:2px solid var(--border);position:relative;transition:box-shadow .2s}
-.pcard:hover{box-shadow:var(--sh2)}
-.pcard.featured{background:#fff;border-color:var(--green);box-shadow:0 0 0 4px rgba(29,185,84,.1),var(--sh2)}
-.pcard-badge{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:var(--orange);color:#fff;font-size:.75rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;padding:5px 18px;border-radius:100px;box-shadow:0 4px 12px rgba(249,115,22,.4);white-space:nowrap}
-.pcard-plan{font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-.pcard-name{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--navy);letter-spacing:.04em;margin-bottom:20px}
-.pcard-price{display:flex;align-items:flex-start;gap:4px;margin-bottom:4px}
-.pcard-cur{font-size:1.1rem;font-weight:900;color:var(--navy);margin-top:8px}
-.pcard-val{font-family:'Bebas Neue',sans-serif;font-size:3.6rem;color:var(--navy);line-height:1;letter-spacing:.02em}
-.pcard-per{font-size:.82rem;color:var(--muted);margin-top:4px;font-weight:700}
-.pcard-was{font-size:.85rem;color:var(--muted);text-decoration:line-through;margin-bottom:2px}
-.pcard-save{font-size:.82rem;font-weight:800;color:var(--green3);margin-bottom:20px;display:flex;align-items:center;gap:6px}
-.pcard-save::before{content:'✓';background:var(--green);color:#fff;width:16px;height:16px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.65rem;flex-shrink:0}
-.pcard-divider{height:1px;background:var(--border);margin:22px 0}
-.pcard-feats{display:flex;flex-direction:column;gap:11px;margin-bottom:32px}
-.pcard-feat{display:flex;align-items:center;gap:9px;font-size:.9rem;font-weight:700;color:var(--text)}
-.pf-ico{width:19px;height:19px;border-radius:50%;background:var(--green-t);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.pf-ico svg{width:10px;height:10px}
-.pcard-note{text-align:center;font-size:.75rem;color:var(--muted);margin-top:12px;font-weight:600}
-.price-trust{display:flex;justify-content:center;align-items:center;gap:32px;margin-top:44px;flex-wrap:wrap}
-.pt-item{display:flex;align-items:center;gap:8px;font-size:.82rem;font-weight:700;color:var(--muted)}
-.pt-item svg{color:var(--green)}
+/* ─── RESULTS STATS ───────────────────────────────────────── */
+#results{background:var(--navy3)}
+.results-head{text-align:center;margin-bottom:48px}
+.results-head h2{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;color:#fff;margin:10px 0 14px}
+.results-head p{color:rgba(255,255,255,.6);font-size:.95rem;max-width:480px;margin:0 auto}
+.results-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.result-item{padding:36px 20px;text-align:center;border-right:1px solid rgba(255,255,255,.1)}
+.result-item:last-child{border-right:none}
+.result-num{font-family:'Sora',sans-serif;font-size:clamp(2.2rem,4vw,3rem);font-weight:800;color:var(--green);line-height:1.1;margin-bottom:6px}
+.result-label{font-size:.78rem;font-weight:600;color:rgba(255,255,255,.6);letter-spacing:.06em;text-transform:uppercase;line-height:1.4}
+.result-sub{font-size:.7rem;color:rgba(255,255,255,.4);margin-top:4px}
 
-/* ═══════════════════════════════════════════════
-   FAQ
-═══════════════════════════════════════════════ */
-#faq{background:var(--off)}
-.faq-list{display:flex;flex-direction:column;gap:10px;max-width:720px;margin:0 auto}
-.faq-item{background:#fff;border-radius:var(--r);border:1.5px solid var(--border);overflow:hidden;transition:border-color .2s}
-.faq-item.open{border-color:var(--green)}
-.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;cursor:pointer;gap:16px;user-select:none}
-.faq-q-text{font-weight:800;font-size:.975rem;color:var(--navy);transition:color .2s}
-.faq-item.open .faq-q-text{color:var(--green3)}
-.faq-icon{width:26px;height:26px;border-radius:50%;background:var(--off);border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .25s}
-.faq-item.open .faq-icon{background:var(--green);border-color:var(--green);transform:rotate(45deg)}
-.faq-icon svg{width:12px;height:12px}
-.faq-item.open .faq-icon path{stroke:#fff}
-.faq-ans{max-height:0;overflow:hidden;transition:max-height .35s ease}
-.faq-ans-inner{padding:0 24px 20px;font-size:.9rem;color:var(--muted);line-height:1.75}
+/* ─── HOW IT WORKS ────────────────────────────────────────── */
+#how{background:#fff}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;position:relative;margin-top:48px}
+.how-grid::before{content:'';position:absolute;top:42px;left:calc(33.33% + 20px);right:calc(33.33% + 20px);height:2px;background:repeating-linear-gradient(to right,var(--green) 0,var(--green) 8px,transparent 8px,transparent 18px);pointer-events:none}
+.how-card{text-align:center}
+.how-num{width:84px;height:84px;border-radius:50%;background:var(--green-lt);border:3px solid var(--green);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:'Sora',sans-serif;font-size:1.6rem;font-weight:800;color:var(--green)}
+.how-card h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:10px}
+.how-card p{font-size:.85rem;color:var(--text2);line-height:1.6}
 
-/* ═══════════════════════════════════════════════
-   FOOTER
-═══════════════════════════════════════════════ */
-#footer{background:var(--navy);color:rgba(255,255,255,.55)}
-.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:48px;padding:64px 0 48px;border-bottom:1px solid rgba(255,255,255,.07)}
-.footer-brand-tagline{font-size:.875rem;margin-top:12px;line-height:1.7;max-width:240px;color:rgba(255,255,255,.45)}
-.footer-social{display:flex;gap:10px;margin-top:20px}
-.soc-ic{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;transition:background .2s}
-.soc-ic:hover{background:var(--green)}
-.soc-ic svg{width:17px;height:17px}
-.footer-col-h{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.1em;color:#fff;margin-bottom:18px}
-.footer-links{display:flex;flex-direction:column;gap:12px}
-.footer-lnk{font-size:.875rem;color:rgba(255,255,255,.45);transition:color .2s;font-weight:600}
-.footer-lnk:hover{color:#fff}
-.wa-cta{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-weight:800;font-size:.82rem;padding:10px 18px;border-radius:100px;margin-top:4px;transition:all .2s}
-.wa-cta:hover{background:#1DBF5A;transform:translateY(-1px)}
-.footer-mail{font-size:.82rem;color:rgba(255,255,255,.35);margin-top:10px;display:block;font-weight:600;transition:color .2s}
-.footer-mail:hover{color:rgba(255,255,255,.7)}
-.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding:24px 0;font-size:.78rem;gap:16px;flex-wrap:wrap}
-.footer-bottom a{color:rgba(255,255,255,.35);transition:color .2s}
-.footer-bottom a:hover{color:#fff}
-.footer-certs{display:flex;gap:10px}
-.fcert{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:6px;padding:4px 10px;font-size:.7rem;color:rgba(255,255,255,.35);letter-spacing:.04em}
+/* ─── BEFORE / AFTER ──────────────────────────────────────── */
+#ba{background:var(--cream)}
+.ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+.ba-card{border-radius:var(--r2);overflow:hidden}
+.ba-header{padding:20px 24px;font-family:'Sora',sans-serif;font-size:1rem;font-weight:800;letter-spacing:.02em;display:flex;align-items:center;gap:10px}
+.ba-card.before .ba-header{background:#FEF2F2;color:var(--red)}
+.ba-card.after .ba-header{background:var(--green-lt);color:var(--green-dk)}
+.ba-items{padding:20px 24px;background:#fff;display:flex;flex-direction:column;gap:12px;border:1px solid var(--border);border-top:none;border-radius:0 0 var(--r2) var(--r2)}
+.ba-item{display:flex;align-items:flex-start;gap:12px;font-size:.86rem;color:var(--text);line-height:1.5}
+.ba-dot{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;margin-top:1px}
+.before .ba-dot{background:#FEE2E2;color:var(--red)}
+.after .ba-dot{background:var(--green-lt);color:var(--green-dk)}
 
-/* ═══════════════════════════════════════════════
-   STICKY BUY BAR
-═══════════════════════════════════════════════ */
-#sticky-bar{
-  position:fixed;bottom:0;left:0;right:0;z-index:800;
-  background:#fff;border-top:2px solid var(--border);
-  padding:12px 24px;
-  display:flex;align-items:center;justify-content:space-between;gap:16px;
-  transform:translateY(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);
-  box-shadow:0 -8px 32px rgba(0,0,0,.12);
-}
-#sticky-bar.show{transform:translateY(0)}
-.sb-left{display:flex;align-items:center;gap:14px}
-.sb-prod{font-weight:900;font-size:.95rem;color:var(--navy)}
-.sb-price{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--green);letter-spacing:.03em}
-.sb-right{display:flex;align-items:center;gap:12px}
+/* ─── REVIEWS ─────────────────────────────────────────────── */
+#reviews{background:#fff}
+.reviews-layout{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start}
+.review-summary{background:var(--cream);border-radius:var(--r2);padding:28px 24px;position:sticky;top:90px}
+.rs-big{font-family:'Sora',sans-serif;font-size:3.8rem;font-weight:800;color:var(--navy);line-height:1}
+.rs-stars{font-size:1.1rem;color:var(--gold);margin:8px 0}
+.rs-count{font-size:.8rem;color:var(--text2);margin-bottom:20px}
+.rs-bars{display:flex;flex-direction:column;gap:8px}
+.rs-bar-row{display:flex;align-items:center;gap:10px}
+.rs-bar-label{font-size:.75rem;font-weight:600;color:var(--text);width:40px;flex-shrink:0}
+.rs-bar-track{flex:1;height:8px;background:var(--cream3);border-radius:999px;overflow:hidden}
+.rs-bar-fill{height:100%;background:var(--gold);border-radius:999px}
+.rs-bar-pct{font-size:.72rem;color:var(--text3);width:30px;text-align:right;flex-shrink:0}
+.review-cards{display:flex;flex-direction:column;gap:16px}
+.rev-card{background:var(--cream);border-radius:var(--r2);padding:22px;border:1px solid var(--border)}
+.rev-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.rev-avatar{width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;font-family:'Sora',sans-serif;font-size:.95rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rev-meta h4{font-size:.88rem;font-weight:700;color:var(--navy)}
+.rev-meta p{font-size:.72rem;color:var(--text3)}
+.rev-stars{color:var(--gold);font-size:.85rem;margin-bottom:8px}
+.rev-title{font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:6px}
+.rev-body{font-size:.83rem;color:var(--text2);line-height:1.6}
+.rev-verified{display:inline-flex;align-items:center;gap:4px;font-size:.68rem;font-weight:600;color:var(--green-dk);background:var(--green-lt);padding:3px 8px;border-radius:999px;margin-top:10px}
 
-/* ═══════════════════════════════════════════════
-   SCROLL REVEAL
-═══════════════════════════════════════════════ */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s ease}
-.reveal.vis{opacity:1;transform:none}
+/* ─── COMPARISON TABLE ────────────────────────────────────── */
+#compare{background:var(--cream)}
+.comp-wrap{overflow-x:auto;margin-top:40px;border-radius:var(--r2);border:1px solid var(--border);background:#fff}
+.comp-table{width:100%;border-collapse:collapse;min-width:560px}
+.comp-table th{padding:16px 20px;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-bottom:2px solid var(--border);text-align:left}
+.comp-table th:first-child{color:var(--text3)}
+.comp-table th.us{color:var(--green);background:var(--green-lt)}
+.comp-table td{padding:14px 20px;font-size:.84rem;border-bottom:1px solid var(--border);vertical-align:middle}
+.comp-table td.us{background:var(--green-lt);font-weight:600;color:var(--green-dk)}
+.comp-table tr:last-child td{border-bottom:none}
+.comp-table td:first-child{font-weight:600;color:var(--navy)}
+.check{color:var(--green);font-weight:700;font-size:1rem}
+.cross{color:var(--red);font-weight:700;font-size:1rem}
+.part{color:var(--orange)}
+
+/* ─── FAQ ─────────────────────────────────────────────────── */
+#faq{background:#fff}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;margin-top:40px}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:18px 0;cursor:pointer;user-select:none;gap:12px}
+.faq-q span{font-size:.92rem;font-weight:600;color:var(--navy);line-height:1.4}
+.faq-arr{font-size:.85rem;color:var(--text3);transition:transform .3s;flex-shrink:0}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.25,.46,.45,.94)}
+.faq-a-inner{padding:0 0 16px;font-size:.84rem;color:var(--text2);line-height:1.7}
+.faq-item.open .faq-arr{transform:rotate(180deg)}
+
+/* ─── GUARANTEE ───────────────────────────────────────────── */
+#guarantee{background:var(--navy3);padding:80px 0}
+.guar-grid{display:grid;grid-template-columns:1fr 2fr 1fr;gap:40px;align-items:center}
+.guar-badge{text-align:center}
+.guar-badge-circle{width:140px;height:140px;border-radius:50%;border:4px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto;gap:2px;background:rgba(255,255,255,.05)}
+.guar-badge-circle strong{font-family:'Sora',sans-serif;font-size:1.6rem;font-weight:800;color:var(--gold);line-height:1}
+.guar-badge-circle small{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);opacity:.8}
+.guar-text h2{font-size:clamp(1.6rem,2.8vw,2.2rem);font-weight:800;color:#fff;margin-bottom:12px;line-height:1.2}
+.guar-text p{font-size:.9rem;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:20px}
+.guar-text ul{display:flex;flex-direction:column;gap:8px}
+.guar-text li{display:flex;align-items:center;gap:8px;font-size:.85rem;color:rgba(255,255,255,.75)}
+.guar-text li::before{content:"✓";color:var(--green);font-weight:700;flex-shrink:0}
+.guar-action{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.btn-main{display:inline-flex;align-items:center;justify-content:center;background:var(--green);color:#fff;font-family:'Sora',sans-serif;font-size:.95rem;font-weight:700;padding:16px 32px;border-radius:var(--r);transition:background .2s;border:none;cursor:pointer;width:100%}
+.btn-main:hover{background:var(--green-dk)}
+.btn-ghost{display:inline-flex;align-items:center;justify-content:center;background:transparent;color:rgba(255,255,255,.7);font-size:.85rem;font-weight:600;padding:12px 24px;border-radius:var(--r);border:1px solid rgba(255,255,255,.2);transition:all .2s;cursor:pointer;width:100%}
+.btn-ghost:hover{background:rgba(255,255,255,.08);color:#fff}
+.guar-note{font-size:.72rem;color:rgba(255,255,255,.4)}
+
+/* ─── FOOTER ──────────────────────────────────────────────── */
+#footer{background:var(--navy);padding:60px 0 32px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.footer-brand p{font-size:.82rem;color:rgba(255,255,255,.5);line-height:1.7;max-width:240px}
+.footer-social{display:flex;gap:10px;margin-top:16px}
+.f-social{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:.9rem;color:rgba(255,255,255,.6);transition:all .2s}
+.f-social:hover{background:var(--green);color:#fff}
+.footer-col h4{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:14px}
+.footer-col ul{display:flex;flex-direction:column;gap:8px}
+.footer-col li a{font-size:.82rem;color:rgba(255,255,255,.55);transition:color .2s}
+.footer-col li a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:.75rem;color:rgba(255,255,255,.35)}
+.footer-payment{display:flex;gap:8px;align-items:center}
+.pay-badge{background:rgba(255,255,255,.08);border-radius:4px;padding:4px 8px;font-size:.65rem;font-weight:700;color:rgba(255,255,255,.5);letter-spacing:.04em}
+
+/* ─── STICKY MOBILE ATC ───────────────────────────────────── */
+#sticky-atc{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--border);padding:12px 16px;z-index:150;transform:translateY(100%);transition:transform .35s cubic-bezier(.25,.46,.45,.94);box-shadow:0 -4px 20px rgba(0,0,0,.1)}
+#sticky-atc.visible{transform:translateY(0)}
+.satc-inner{display:flex;align-items:center;gap:12px}
+.satc-info{flex:1;min-width:0}
+.satc-name{font-size:.82rem;font-weight:700;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.satc-price{font-size:.9rem;font-weight:800;color:var(--green)}
+.satc-btn{background:var(--green);color:#fff;font-size:.85rem;font-weight:700;padding:12px 24px;border-radius:var(--r);white-space:nowrap;transition:background .2s;font-family:'Sora',sans-serif;border:none;cursor:pointer}
+.satc-btn:hover{background:var(--green-dk)}
+
+/* ─── SECTION HEADERS ─────────────────────────────────────── */
+.sec-hd{text-align:center;max-width:620px;margin:0 auto}
+.sec-hd h2{font-size:clamp(1.7rem,3vw,2.3rem);font-weight:800;color:var(--navy);margin:8px 0 14px}
+.sec-hd p{font-size:.9rem;color:var(--text2);line-height:1.7}
+.sec-hd-left{text-align:left;margin:0}
+
+/* ─── COUNTDOWN ───────────────────────────────────────────── */
+.countdown-row{display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.cd-label{font-size:.75rem;font-weight:600;color:var(--orange);text-transform:uppercase;letter-spacing:.06em}
+.cd-blocks{display:flex;gap:6px;align-items:center}
+.cd-block{background:var(--navy);color:#fff;font-family:'Sora',sans-serif;font-size:1.1rem;font-weight:800;padding:6px 10px;border-radius:6px;min-width:40px;text-align:center;line-height:1}
+.cd-sep{font-size:1rem;font-weight:700;color:var(--orange)}
+.cd-unit{font-size:.55rem;letter-spacing:.06em;display:block;opacity:.6;font-weight:400}
+
+/* ─── SCROLL REVEAL ───────────────────────────────────────── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
 .reveal-d1{transition-delay:.1s}
 .reveal-d2{transition-delay:.2s}
 .reveal-d3{transition-delay:.3s}
 
-/* ═══════════════════════════════════════════════
-   RESPONSIVE
-═══════════════════════════════════════════════ */
-
-/* ── Tablet ≤960px ───────────────────────────── */
-@media(max-width:960px){
-  .sec{padding:72px 0}
-  .sec-header{margin-bottom:40px}
-  .nav-links{display:none}
-  .hero-grid,.grid-2{grid-template-columns:1fr;gap:28px}
-  .hero-visual{display:none}
-  .hero-sub{max-width:100%}
-  .guar-inner{gap:36px}
-  .grid-3{grid-template-columns:repeat(2,1fr)}
-  .steps{grid-template-columns:repeat(2,1fr);gap:28px}
-  .steps::before{display:none}
-  .problem-grid{grid-template-columns:repeat(2,1fr)}
-  .footer-top{grid-template-columns:repeat(2,1fr);gap:28px;padding:48px 0 36px}
-  .price-grid{grid-template-columns:1fr;max-width:480px;margin:0 auto}
-  .testi-card{flex:0 0 calc(50% - 12px)}
-  /* Stats: 2×2 grid */
-  .stats-inner{display:grid;grid-template-columns:repeat(2,1fr);padding:0;gap:0}
-  .stat-item{padding:24px 16px;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
-  .stat-item:nth-child(2n){border-right:none}
-  .stat-item:nth-last-child(-n+2){border-bottom:none}
-  .stat-divider{display:none}
-  .grid-4{grid-template-columns:repeat(2,1fr)}
+/* ─── RESPONSIVE ──────────────────────────────────────────── */
+@media(max-width:1024px){
+  .pdp-grid{gap:32px}
+  .ing-grid{gap:40px}
+  .guar-grid{grid-template-columns:1fr 1.5fr 1fr;gap:24px}
+  .footer-grid{grid-template-columns:1.5fr 1fr 1fr 1fr}
 }
-
-/* ── Mobile ≤640px ───────────────────────────── */
-@media(max-width:640px){
-  /* Global */
-  .sec{padding:48px 0}
-  .sec-sm{padding:32px 0}
-  .sec-header{margin-bottom:24px}
-  .sec-header.center{margin-bottom:24px}
-  .wrap,.wrap-sm{padding:0 16px}
-
-  /* Nav */
-  .nav-inner{height:58px}
-  .nav-name{font-size:1.1rem}
-
-  /* Hero */
-  #hero{padding:36px 0 40px}
-  .hero-grid{gap:0}
-  .d1{font-size:clamp(2.5rem,9vw,3rem)}
-  .hero-rating{margin-bottom:12px}
-  .hero-sub{font-size:.93rem;margin-bottom:16px;line-height:1.6}
-  .hero-checks{gap:8px;margin-bottom:20px}
-  .chk{font-size:.875rem}
-  .hero-cta-row{flex-direction:column;align-items:stretch;gap:10px;margin-bottom:14px}
-  .btn-lg{font-size:.93rem;padding:15px 22px}
-  .btn-ghost{display:none}
-  .hero-price-note{font-size:.72rem}
-  .hero-trust{flex-wrap:wrap;padding-top:14px;gap:8px}
-  .trust-copy{font-size:.74rem}
-
-  /* Stats */
-  .stat-num{font-size:1.9rem}
-  .stat-item{padding:16px 12px}
-  .stat-label{font-size:.72rem;letter-spacing:.04em}
-
-  /* Press */
-  #press{padding:18px 0}
-  .press-inner{flex-direction:column;gap:10px}
-  .press-logos{overflow-x:auto;flex-wrap:nowrap;gap:20px;padding-bottom:4px;
-    -webkit-overflow-scrolling:touch;scrollbar-width:none}
-  .press-logos::-webkit-scrollbar{display:none}
-
-  /* Problem */
-  .problem-grid{grid-template-columns:1fr;gap:12px}
-  .prob-card{padding:16px}
-  .prob-ico{width:40px;height:40px;border-radius:10px;margin-bottom:10px}
-  .prob-ico svg{width:22px;height:22px}
-  .prob-solution-box{padding:20px 18px}
-
-  /* Steps — horizontal layout on mobile */
-  .steps{grid-template-columns:1fr;gap:18px}
-  .step{display:flex;align-items:flex-start;gap:14px;text-align:left}
-  .step-num{width:46px;height:46px;font-size:1.5rem;flex-shrink:0;margin:0;
-    box-shadow:0 0 0 5px var(--off),0 0 0 7px var(--green)}
-
-  /* Science */
-  .grid-3{grid-template-columns:1fr}
-  .sci-card{padding:20px}
-  .sci-ico{width:52px;height:52px;border-radius:12px;margin-bottom:14px}
-
-  /* Testimonials */
-  .testi-card{flex:0 0 86vw;padding:18px}
-  .testi-quote{font-size:.875rem;margin:10px 0 14px}
-  .testi-badge{display:none}
-  .testi-meta{font-size:.7rem}
-
-  /* Guarantee */
-  .guar-inner{flex-direction:column;align-items:center;text-align:center;gap:24px}
-  .guar-checks{align-items:flex-start;text-align:left}
-  .guar-badge{width:130px;height:130px;
-    box-shadow:0 0 0 8px rgba(29,185,84,.12),0 0 0 16px rgba(29,185,84,.06)}
-  .guar-badge .num{font-size:2.8rem}
-  .guar-badge .day{font-size:1rem}
-  .guar-body{font-size:.88rem;margin-bottom:16px}
-
-  /* Pricing */
-  .timer-bar{flex-direction:column;align-items:center;gap:10px;
-    padding:12px 14px;margin-bottom:28px;text-align:center}
-  .price-grid{max-width:100%;gap:40px}
-  .pcard{padding:24px 18px}
-  .pcard-val{font-size:2.6rem}
-  .pcard-feats{gap:9px;margin-bottom:24px}
-  .price-trust{gap:12px;justify-content:flex-start}
-  .pt-item{font-size:.74rem;gap:5px}
-  .pt-item svg{width:14px;height:14px;flex-shrink:0}
-
-  /* FAQ */
-  .faq-q{padding:14px 16px;gap:12px}
-  .faq-q-text{font-size:.875rem}
-  .faq-ans-inner{padding:0 16px 16px;font-size:.84rem}
-
-  /* Footer */
-  .footer-top{grid-template-columns:1fr;gap:22px;padding:32px 0 24px}
-  .footer-bottom{flex-direction:column;align-items:flex-start;gap:10px;padding:18px 0}
-  .footer-certs{flex-wrap:wrap;gap:6px}
-  .footer-brand-tagline{font-size:.82rem}
-
-  /* Sticky bar */
-  #sticky-bar{padding:9px 14px}
-  .sb-prod{font-size:.85rem}
-
-  /* d3 headings */
-  .d3{font-size:clamp(1.7rem,6vw,2.2rem)}
+@media(max-width:900px){
+  .pdp-grid{grid-template-columns:1fr}
+  .pdp-gallery{position:static}
+  .ing-grid{grid-template-columns:1fr}
+  .ing-wheel{min-height:auto}
+  .reviews-layout{grid-template-columns:1fr}
+  .review-summary{position:static}
+  .faq-grid{grid-template-columns:1fr}
+  .guar-grid{grid-template-columns:1fr;text-align:center}
+  .guar-text ul{align-items:center}
+  .guar-action{flex-direction:row;max-width:400px;margin:0 auto}
+  .btn-main,.btn-ghost{width:auto;flex:1}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
+  .how-grid{grid-template-columns:1fr;gap:32px}
+  .how-grid::before{display:none}
+  .trust-strip-grid{grid-template-columns:repeat(2,1fr)}
+  .ts-item{border-bottom:1px solid rgba(255,255,255,.1)}
+  .ts-item:nth-child(2){border-right:none}
+  .ts-item:nth-child(3){border-bottom:none}
+  .ts-item:nth-child(4){border-right:none;border-bottom:none}
+}
+@media(max-width:680px){
+  .sec{padding:52px 0}
+  .sec-sm{padding:36px 0}
+  #hero{padding:24px 0 40px}
+  .ben-grid{grid-template-columns:1fr 1fr}
+  .results-grid{grid-template-columns:repeat(2,1fr)}
+  .result-item{border-bottom:1px solid rgba(255,255,255,.1)}
+  .result-item:nth-child(2){border-right:none}
+  .result-item:nth-child(3){border-bottom:none}
+  .result-item:nth-child(4){border-right:none;border-bottom:none}
+  .ba-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:10px}
+  .guar-action{flex-direction:column}
+  .btn-main,.btn-ghost{width:100%}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .nav-cta{display:none}
+  .toggle-options{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .container{padding:0 16px}
+  .ben-grid{grid-template-columns:1fr}
+  .trust-strip-grid{grid-template-columns:repeat(2,1fr)}
 }
 </style>
 </head>
 <body>
 
-<!-- ████████ ANNOUNCEMENT BAR ████████ -->
-<div id="ann" aria-label="Promotional offer">
+<!-- ─── ANNOUNCEMENT BAR ─────────────────────────────────── -->
+<div id="ann-bar">
   <div class="ann-track">
-    <span class="ann-item"><span>🎁</span> Free shipping on orders above ₹499</span>
-    <span class="ann-item"><span>⭐</span> 4.8/5 from 4,800+ verified cat parents</span>
-    <span class="ann-item"><span>🧪</span> Vet-endorsed &amp; clinically tested formula</span>
-    <span class="ann-item"><span>🔄</span> Cancel your subscription anytime — no questions asked</span>
-    <span class="ann-item"><span>🎁</span> Free shipping on orders above ₹499</span>
-    <span class="ann-item"><span>⭐</span> 4.8/5 from 4,800+ verified cat parents</span>
-    <span class="ann-item"><span>🧪</span> Vet-endorsed &amp; clinically tested formula</span>
-    <span class="ann-item"><span>🔄</span> Cancel your subscription anytime — no questions asked</span>
+    <div class="ann-item">🚀 Free shipping on orders above <span>₹499</span></div>
+    <div class="ann-item ann-sep">✦</div>
+    <div class="ann-item">🎁 Subscribe &amp; Save <span>15%</span> on every order</div>
+    <div class="ann-item ann-sep">✦</div>
+    <div class="ann-item">✅ <span>30-Day</span> Happiness Guarantee — no questions asked</div>
+    <div class="ann-item ann-sep">✦</div>
+    <div class="ann-item">🌱 Vet-formulated, freeze-dried &amp; made for Indian cats</div>
+    <div class="ann-item ann-sep">✦</div>
+    <div class="ann-item">🚀 Free shipping on orders above <span>₹499</span></div>
+    <div class="ann-item ann-sep">✦</div>
+    <div class="ann-item">🎁 Subscribe &amp; Save <span>15%</span> on every order</div>
+    <div class="ann-item ann-sep">✦</div>
+    <div class="ann-item">✅ <span>30-Day</span> Happiness Guarantee — no questions asked</div>
+    <div class="ann-item ann-sep">✦</div>
+    <div class="ann-item">🌱 Vet-formulated, freeze-dried &amp; made for Indian cats</div>
+    <div class="ann-item ann-sep">✦</div>
   </div>
 </div>
 
-<!-- ████████ NAV ████████ -->
-<nav id="nav" aria-label="Main navigation">
-  <div class="wrap">
+<!-- ─── NAV ──────────────────────────────────────────────── -->
+<header id="nav">
+  <div class="container">
     <div class="nav-inner">
-      <a href="#" class="nav-logo" aria-label="Feline Gut Boost home">
-        <div class="nav-logo-mark">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <ellipse cx="12" cy="13" rx="7" ry="8.5"/>
-            <ellipse cx="6" cy="8" rx="3.5" ry="4.5"/>
-            <ellipse cx="18" cy="8" rx="3.5" ry="4.5"/>
-            <ellipse cx="3.5" cy="5" rx="2" ry="2.5"/>
-            <ellipse cx="20.5" cy="5" rx="2" ry="2.5"/>
-          </svg>
+      <a class="nav-logo" href="#">
+        <div class="logo-mark">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C6 2 3 5 3 10s3 8 7 8 7-3 7-8-3-8-7-8zm0 13c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z" fill="#fff"/><circle cx="10" cy="10" r="2.5" fill="#fff"/></svg>
         </div>
-        <span class="nav-name">Feline <span>Gut Boost</span></span>
+        Feline Gut Boost
       </a>
-      <nav class="nav-links" aria-label="Site sections">
-        <a href="#science" class="nav-link">Benefits</a>
-        <a href="#testi" class="nav-link">Reviews</a>
-        <a href="#pricing" class="nav-link">Pricing</a>
-        <a href="#faq" class="nav-link">FAQ</a>
+      <nav class="nav-links">
+        <a href="#ingredients">Ingredients</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#compare">Compare</a>
       </nav>
-      <a href="#pricing" class="btn btn-green btn-sm">Buy Now</a>
+      <div class="nav-right">
+        <a href="#hero" class="nav-cta">Shop Now</a>
+        <div class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
+</header>
 
-<!-- ████████ HERO ████████ -->
-<section id="hero" aria-labelledby="hero-h1">
-  <div class="wrap">
-    <div class="hero-grid">
+<!-- ─── NAV DRAWER ───────────────────────────────────────── -->
+<div id="nav-drawer">
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <div class="drawer-panel">
+    <div class="drawer-head">
+      <div class="nav-logo">
+        <div class="logo-mark"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M10 2C6 2 3 5 3 10s3 8 7 8 7-3 7-8-3-8-7-8zm0 13c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z" fill="#fff"/><circle cx="10" cy="10" r="2.5" fill="#fff"/></svg></div>
+        Feline Gut Boost
+      </div>
+      <button class="drawer-close" id="drawer-close">✕</button>
+    </div>
+    <nav class="drawer-links">
+      <a href="#ingredients" onclick="closeDrawer()">Ingredients</a>
+      <a href="#benefits" onclick="closeDrawer()">Benefits</a>
+      <a href="#how" onclick="closeDrawer()">How It Works</a>
+      <a href="#reviews" onclick="closeDrawer()">Reviews</a>
+      <a href="#compare" onclick="closeDrawer()">Compare</a>
+      <a href="#faq" onclick="closeDrawer()">FAQ</a>
+    </nav>
+    <button class="btn-main" onclick="closeDrawer()" style="margin-top:auto">Shop Now — ₹399</button>
+  </div>
+</div>
 
-      <!-- Left copy -->
-      <div class="hero-copy">
-        <div class="hero-rating" aria-label="Customer rating: 4.8 out of 5 from 4823 reviews">
-          <div class="stars" aria-hidden="true">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+<!-- ─── HERO / PDP ───────────────────────────────────────── -->
+<section id="hero">
+  <div class="container">
+    <div class="pdp-grid">
+
+      <!-- GALLERY -->
+      <div class="pdp-gallery">
+        <div class="gallery-main">
+          <div class="gallery-badges">
+            <div class="g-badge green">Bestseller</div>
+            <div class="g-badge orange">Limited Offer</div>
           </div>
-          <span class="hero-rating-text"><strong>4.8/5</strong> from 4,823 reviews</span>
-        </div>
-
-        <h1 id="hero-h1" class="d1 hero-hl">
-          End Your Cat's<br>
-          <span class="accent">Gut Problems</span><br>
-          For Good
-        </h1>
-
-        <p class="hero-sub">India's first freeze-dried probiotic topper — scientifically formulated for picky, sensitive cats. Results in 7 days or your money back.</p>
-
-        <ul class="hero-checks" aria-label="Product benefits">
-          <li class="chk">
-            <span class="chk-ico" aria-hidden="true"><svg viewBox="0 0 11 11" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5.5 4.5,8.5 9.5,2"/></svg></span>
-            10 Billion live CFU — micro-encapsulated for gut survival
-          </li>
-          <li class="chk">
-            <span class="chk-ico" aria-hidden="true"><svg viewBox="0 0 11 11" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5.5 4.5,8.5 9.5,2"/></svg></span>
-            85% real offal — liver, heart &amp; kidney, not fillers
-          </li>
-          <li class="chk">
-            <span class="chk-ico" aria-hidden="true"><svg viewBox="0 0 11 11" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5.5 4.5,8.5 9.5,2"/></svg></span>
-            Micro-crumble texture — irresistible even for picky eaters
-          </li>
-        </ul>
-
-        <div class="hero-cta-row">
-          <a href="#pricing" class="btn btn-green btn-lg">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-            Try It — From ₹399
-          </a>
-          <a href="#testi" class="btn btn-ghost">See Reviews</a>
-        </div>
-        <p class="hero-price-note">30-day money back guarantee · Free pan-India shipping</p>
-
-        <div class="hero-trust">
-          <div class="trust-ava" aria-hidden="true">
-            <span>PK</span><span>SR</span><span>AM</span><span>TN</span><span>RK</span>
+          <div class="gallery-product">
+            <svg viewBox="0 0 340 380" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:280px">
+              <defs>
+                <linearGradient id="pouchGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#0E2448"/>
+                  <stop offset="100%" stop-color="#1DB954" stop-opacity=".9"/>
+                </linearGradient>
+                <linearGradient id="shimmer" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#fff" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <rect x="40" y="30" width="260" height="320" rx="24" fill="url(#pouchGrad)"/>
+              <rect x="40" y="30" width="260" height="320" rx="24" fill="url(#shimmer)"/>
+              <ellipse cx="170" cy="145" rx="52" ry="48" fill="rgba(255,255,255,.08)"/>
+              <path d="M148 118 L138 95 L158 112Z" fill="rgba(255,255,255,.15)"/>
+              <path d="M192 118 L202 95 L182 112Z" fill="rgba(255,255,255,.15)"/>
+              <ellipse cx="170" cy="148" rx="36" ry="32" fill="rgba(255,255,255,.07)"/>
+              <circle cx="158" cy="142" r="8" fill="rgba(255,255,255,.2)"/>
+              <circle cx="182" cy="142" r="8" fill="rgba(255,255,255,.2)"/>
+              <circle cx="158" cy="142" r="4" fill="rgba(0,0,0,.4)"/>
+              <circle cx="182" cy="142" r="4" fill="rgba(0,0,0,.4)"/>
+              <path d="M162 158 Q170 165 178 158" stroke="rgba(255,255,255,.35)" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <text x="170" y="222" text-anchor="middle" fill="white" font-family="'Sora',sans-serif" font-size="20" font-weight="800" letter-spacing="1">FELINE</text>
+              <text x="170" y="246" text-anchor="middle" fill="#1DB954" font-family="'Sora',sans-serif" font-size="20" font-weight="800" letter-spacing="1">GUT BOOST</text>
+              <text x="170" y="268" text-anchor="middle" fill="rgba(255,255,255,.55)" font-family="'Inter',sans-serif" font-size="11">Probiotic Freeze-Dried Topper</text>
+              <rect x="120" y="285" width="100" height="32" rx="8" fill="rgba(255,255,255,.12)"/>
+              <text x="170" y="306" text-anchor="middle" fill="white" font-family="'Inter',sans-serif" font-size="12" font-weight="700">100g · 10B CFU</text>
+              <rect x="40" y="318" width="260" height="32" rx="0" fill="rgba(0,0,0,.25)"/>
+              <rect x="60" y="328" width="220" height="8" rx="4" fill="rgba(255,255,255,.08)"/>
+            </svg>
           </div>
-          <p class="trust-copy"><strong>4,800+ Indian cat parents</strong> already switched to Feline Gut Boost</p>
+        </div>
+        <div class="gallery-thumbs">
+          <div class="g-thumb active" onclick="selectThumb(this)">
+            <svg viewBox="0 0 80 80" fill="none" style="width:50px"><rect width="80" height="80" fill="#E6F9EE" rx="4"/><text x="40" y="52" text-anchor="middle" font-size="28">🐱</text></svg>
+          </div>
+          <div class="g-thumb" onclick="selectThumb(this)">
+            <svg viewBox="0 0 80 80" fill="none" style="width:50px"><rect width="80" height="80" fill="#F8F5F1" rx="4"/><text x="40" y="52" text-anchor="middle" font-size="28">🌿</text></svg>
+          </div>
+          <div class="g-thumb" onclick="selectThumb(this)">
+            <svg viewBox="0 0 80 80" fill="none" style="width:50px"><rect width="80" height="80" fill="#EDE9E3" rx="4"/><text x="40" y="52" text-anchor="middle" font-size="28">✨</text></svg>
+          </div>
+          <div class="g-thumb" onclick="selectThumb(this)">
+            <svg viewBox="0 0 80 80" fill="none" style="width:50px"><rect width="80" height="80" fill="#FFF7ED" rx="4"/><text x="40" y="52" text-anchor="middle" font-size="28">🐾</text></svg>
+          </div>
         </div>
       </div>
 
-      <!-- Right product visual -->
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-glow"></div>
+      <!-- PRODUCT INFO -->
+      <div class="pdp-info">
+        <div class="pdp-breadcrumb">Cat Food &rsaquo; <span>Toppers &amp; Supplements</span></div>
+        <div class="tag-pill">⚡ New Formula · 10 Billion CFU</div>
+        <h1 class="pdp-title">Feline Gut Boost</h1>
+        <p class="pdp-subtitle">Probiotic freeze-dried cat food topper with 85% offal, 10B CFU live cultures &amp; zero fillers. Turn any picky cat into an eager eater — in 7 days or your money back.</p>
 
-        <!-- floating badges -->
-        <div class="hero-float hf1">
-          <div class="hf-label">Live Probiotics</div>
-          <div class="hf-val">10 Billion CFU</div>
-        </div>
-        <div class="hero-float hf2">
-          <div class="hf-label">Real Offal</div>
-          <div class="hf-val">85% Content</div>
-        </div>
-        <div class="hero-float hf3">
-          <div class="hf-label">Rated</div>
-          <div class="hf-val">⭐ 4.8 / 5</div>
+        <div class="pdp-stars">
+          <span class="stars">★★★★★</span>
+          <span class="star-count">4.8 &nbsp;<a href="#reviews">from 4,800+ reviews</a></span>
+          <span class="verified-tag">✓ Verified</span>
         </div>
 
-        <!-- Product Pouch SVG -->
-        <div class="hero-pouch">
-          <svg viewBox="0 0 220 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="pouchGrad" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stop-color="#0B2545"/>
-                <stop offset="40%" stop-color="#1B3B6E"/>
-                <stop offset="100%" stop-color="#0B2545"/>
-              </linearGradient>
-              <linearGradient id="sealGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#1E3F6F"/>
-                <stop offset="100%" stop-color="#0D2548"/>
-              </linearGradient>
-              <linearGradient id="labelGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#1B8C4E"/>
-                <stop offset="100%" stop-color="#0D6E39"/>
-              </linearGradient>
-              <radialGradient id="glowIn" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="rgba(29,185,84,.2)"/>
-                <stop offset="100%" stop-color="transparent"/>
-              </radialGradient>
-              <filter id="pShadow" x="-10%" y="-5%" width="120%" height="120%">
-                <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,.5)"/>
-              </filter>
-            </defs>
-
-            <!-- Pouch body -->
-            <rect x="22" y="38" width="176" height="264" rx="22" fill="url(#pouchGrad)" filter="url(#pShadow)"/>
-            <!-- Side shading -->
-            <rect x="22" y="38" width="18" height="264" rx="22" fill="rgba(0,0,0,.18)"/>
-            <rect x="180" y="38" width="18" height="264" rx="22" fill="rgba(0,0,0,.1)"/>
-            <!-- Seal bar top -->
-            <rect x="22" y="24" width="176" height="30" rx="8" fill="url(#sealGrad)"/>
-            <!-- Seal ridges -->
-            <rect x="32" y="30" width="156" height="3" rx="1.5" fill="rgba(255,255,255,.08)"/>
-            <rect x="32" y="36" width="156" height="2" rx="1" fill="rgba(255,255,255,.05)"/>
-            <!-- Hang hole -->
-            <circle cx="110" cy="26" r="7" fill="#060F1E"/>
-            <circle cx="110" cy="26" r="4" fill="rgba(255,255,255,.07)"/>
-            <!-- Bottom gusset -->
-            <ellipse cx="110" cy="296" rx="72" ry="8" fill="rgba(0,0,0,.22)"/>
-            <rect x="22" y="280" width="176" height="22" rx="0 0 22 22" fill="rgba(0,0,0,.12)"/>
-
-            <!-- Label area -->
-            <rect x="36" y="64" width="148" height="192" rx="14" fill="rgba(255,255,255,.04)"/>
-            <rect x="36" y="64" width="148" height="192" rx="14" stroke="rgba(255,255,255,.07)" stroke-width="1"/>
-
-            <!-- Logo circle -->
-            <circle cx="110" cy="118" r="40" fill="url(#labelGrad)"/>
-            <circle cx="110" cy="118" r="40" fill="url(#glowIn)"/>
-            <!-- Paw inside -->
-            <ellipse cx="110" cy="123" rx="12" ry="14" fill="rgba(255,255,255,.9)"/>
-            <ellipse cx="95" cy="116" rx="7" ry="9" fill="rgba(255,255,255,.9)"/>
-            <ellipse cx="125" cy="116" rx="7" ry="9" fill="rgba(255,255,255,.9)"/>
-            <ellipse cx="100" cy="105" rx="5.5" ry="6.5" fill="rgba(255,255,255,.9)"/>
-            <ellipse cx="120" cy="105" rx="5.5" ry="6.5" fill="rgba(255,255,255,.9)"/>
-
-            <!-- Brand name text blocks -->
-            <rect x="68" y="168" width="84" height="10" rx="5" fill="rgba(255,255,255,.7)"/>
-            <rect x="76" y="182" width="68" height="8" rx="4" fill="rgba(29,185,84,.8)"/>
-            <rect x="60" y="196" width="100" height="6" rx="3" fill="rgba(255,255,255,.3)"/>
-            <rect x="68" y="207" width="84" height="5" rx="2.5" fill="rgba(255,255,255,.2)"/>
-            <rect x="76" y="216" width="68" height="5" rx="2.5" fill="rgba(255,255,255,.15)"/>
-
-            <!-- Bottom label strip -->
-            <rect x="36" y="244" width="148" height="28" rx="0 0 12 12" fill="rgba(29,185,84,.15)"/>
-            <rect x="60" y="252" width="100" height="5" rx="2.5" fill="rgba(255,255,255,.3)"/>
-            <rect x="72" y="261" width="76" height="4" rx="2" fill="rgba(255,255,255,.2)"/>
-
-            <!-- Shine highlight -->
-            <rect x="152" y="48" width="18" height="260" rx="9" fill="rgba(255,255,255,.04)"/>
-          </svg>
+        <div class="countdown-row">
+          <span class="cd-label">⏰ Offer ends in:</span>
+          <div class="cd-blocks">
+            <div class="cd-block"><span id="cd-h">03</span><span class="cd-unit">hrs</span></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-block"><span id="cd-m">59</span><span class="cd-unit">min</span></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-block"><span id="cd-s">47</span><span class="cd-unit">sec</span></div>
+          </div>
         </div>
-      </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- ████████ STATS BAR ████████ -->
-<section id="stats" aria-label="Key statistics">
-  <div class="wrap">
-    <div class="stats-inner">
-      <div class="stat-item reveal">
-        <div class="stat-num"><span id="c1">0</span>+</div>
-        <div class="stat-label">Happy Cats</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item reveal reveal-d1">
-        <div class="stat-num"><span id="c2">0</span>★</div>
-        <div class="stat-label">Average Rating</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item reveal reveal-d2">
-        <div class="stat-num"><span id="c3">0</span>%</div>
-        <div class="stat-label">Real Offal Content</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item reveal reveal-d3">
-        <div class="stat-num"><span id="c4">0</span>B</div>
-        <div class="stat-label">Live CFU Per Serve</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ████████ PRESS BAR ████████ -->
-<section id="press" aria-label="As featured in">
-  <div class="wrap">
-    <div class="press-inner">
-      <span class="press-label">As seen in</span>
-      <div class="press-logos">
-        <div class="press-logo" aria-label="VetCare India">
-          <div class="press-logo-box"><svg viewBox="0 0 20 20" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"><path d="M10 2l2.5 5 5.5.8-4 3.9.95 5.5L10 14.75 5.05 17.2 6 11.7 2 7.8l5.5-.8z"/></svg></div>
-          <span class="press-logo-name">VetCare India</span>
-        </div>
-        <div class="press-logo" aria-label="PetMD Bulletin">
-          <div class="press-logo-box"><svg viewBox="0 0 20 20" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="4" width="14" height="12" rx="2"/><line x1="3" y1="8" x2="17" y2="8"/><line x1="7" y1="4" x2="7" y2="16"/></svg></div>
-          <span class="press-logo-name">PetMD Bulletin</span>
-        </div>
-        <div class="press-logo" aria-label="Pawsitive Health">
-          <div class="press-logo-box"><svg viewBox="0 0 20 20" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"><path d="M10 18s-7-4.5-7-9a7 7 0 0114 0c0 4.5-7 9-7 9z"/></svg></div>
-          <span class="press-logo-name">Pawsitive Health</span>
-        </div>
-        <div class="press-logo" aria-label="Times Pets">
-          <div class="press-logo-box"><svg viewBox="0 0 20 20" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"><circle cx="10" cy="10" r="8"/><line x1="10" y1="6" x2="10" y2="10"/><line x1="10" y1="10" x2="13" y2="13"/></svg></div>
-          <span class="press-logo-name">Times Pets</span>
-        </div>
-        <div class="press-logo" aria-label="The Better Pet">
-          <div class="press-logo-box"><svg viewBox="0 0 20 20" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"><path d="M3 10l7-7 7 7v7H3z"/><rect x="7" y="13" width="6" height="4"/></svg></div>
-          <span class="press-logo-name">The Better Pet</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ████████ PROBLEM SECTION ████████ -->
-<section id="problem" class="sec" aria-labelledby="problem-h2">
-  <div class="wrap">
-    <div class="grid-2">
-      <!-- Problem cards left -->
-      <div>
-        <div class="sec-header reveal">
-          <div class="sec-eyebrow"><span class="pill pill-orange">Sound Familiar?</span></div>
-          <h2 id="problem-h2" class="d3 sec-title">Is Your Cat Struggling With These Signs?</h2>
-          <p class="sec-body">Millions of Indian cat parents silently watch their cats suffer — often not realising the root cause is gut health.</p>
-        </div>
-        <div class="problem-grid">
-          <div class="prob-card reveal">
-            <div class="prob-ico" style="background:#FFF3E8">
-              <svg viewBox="0 0 26 26" fill="none" stroke="var(--orange)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="13" r="10"/><path d="M9 16s1.5-2 4-2 4 2 4 2"/><line x1="9" y1="10" x2="9.01" y2="10"/><line x1="17" y1="10" x2="17.01" y2="10"/></svg>
+        <div class="purchase-toggle">
+          <div class="toggle-label">Purchase type</div>
+          <div class="toggle-options">
+            <div class="toggle-opt">
+              <input type="radio" name="purchase" id="ot" value="ot">
+              <label for="ot">
+                <div class="tog-row"><span class="tog-name">One-Time</span></div>
+                <div class="tog-price">₹399</div>
+                <div class="tog-note">Delivered once</div>
+              </label>
             </div>
-            <h3 class="prob-title">Refuses Food</h3>
-            <p class="prob-text">Your cat sniffs the bowl and walks away — despite you trying every flavour, brand, and texture.</p>
-          </div>
-          <div class="prob-card reveal reveal-d1">
-            <div class="prob-ico" style="background:#FFF0F0">
-              <svg viewBox="0 0 26 26" fill="none" stroke="#EF4444" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3l2 6h6l-5 3.5 2 6-5-3.5-5 3.5 2-6L5 9h6z"/></svg>
+            <div class="toggle-opt">
+              <input type="radio" name="purchase" id="sub" value="sub" checked>
+              <label for="sub">
+                <div class="tog-row"><span class="tog-name">Subscribe</span><span class="tog-save">Save 15%</span></div>
+                <div class="tog-price">₹339 <span style="font-size:.75rem;font-weight:400;color:var(--text3);text-decoration:line-through">₹399</span></div>
+                <div class="tog-note">Delivered every 30 days · cancel anytime</div>
+              </label>
             </div>
-            <h3 class="prob-title">Loose Stools / Bloating</h3>
-            <p class="prob-text">Frequent soft stools, gas, or a visibly bloated belly — classic signs of microbial imbalance.</p>
-          </div>
-          <div class="prob-card reveal reveal-d2">
-            <div class="prob-ico" style="background:#EEF2FF">
-              <svg viewBox="0 0 26 26" fill="none" stroke="#6366F1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C7 2 3 6 3 11c0 3.9 2.4 7.3 6 8.7V22h6v-2.3c3.6-1.4 6-4.8 6-8.7 0-5-4-9-9-9z"/></svg>
-            </div>
-            <h3 class="prob-title">Low Energy / Dull Coat</h3>
-            <p class="prob-text">A cat that doesn't absorb nutrients properly will look and feel it — lethargic, lacklustre fur.</p>
-          </div>
-          <div class="prob-card reveal reveal-d3">
-            <div class="prob-ico" style="background:#F0FDF4">
-              <svg viewBox="0 0 26 26" fill="none" stroke="var(--green3)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-            </div>
-            <h3 class="prob-title">Vomiting After Meals</h3>
-            <p class="prob-text">Occasional vomiting attributed to "eating too fast" is often the gut struggling with the food.</p>
           </div>
         </div>
-      </div>
 
-      <!-- Solution box right -->
-      <div class="problem-right reveal">
-        <div class="prob-solution-box">
-          <h3 class="d3">The Fix Is<br><span>Simpler Than<br>You Think.</span></h3>
-          <p class="prob-sol-sub">Over 90% of feline digestive issues trace back to an imbalanced gut microbiome — not pickiness, not stress. Replenish the right bacteria and the body heals itself.</p>
-          <ul style="display:flex;flex-direction:column;gap:12px;margin-bottom:28px">
-            <li class="chk"><span class="chk-ico"><svg viewBox="0 0 11 11" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5.5 4.5,8.5 9.5,2"/></svg></span>Stable live cultures that reach the gut intact</li>
-            <li class="chk"><span class="chk-ico"><svg viewBox="0 0 11 11" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5.5 4.5,8.5 9.5,2"/></svg></span>Organ-meat nutrition cats are designed for</li>
-            <li class="chk"><span class="chk-ico"><svg viewBox="0 0 11 11" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5.5 4.5,8.5 9.5,2"/></svg></span>A texture too irresistible for even fussy eaters</li>
-          </ul>
-          <a href="#pricing" class="btn btn-green btn-lg">Start the 7-Day Fix →</a>
+        <div class="size-row">
+          <div class="size-label">Size</div>
+          <div class="size-btns">
+            <button class="size-btn active" onclick="selectSize(this)">100g</button>
+            <button class="size-btn" onclick="selectSize(this)">200g <span style="font-size:.72rem;color:var(--green-dk);font-weight:700">(Best Value)</span></button>
+            <button class="size-btn" onclick="selectSize(this)">500g</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <span class="price-main" id="price-display">₹339</span>
+          <span class="price-orig" id="price-orig">₹399</span>
+          <span class="price-badge">15% OFF</span>
+        </div>
+
+        <div class="qty-atc">
+          <div class="qty-wrap">
+            <button class="qty-btn" onclick="changeQty(-1)">−</button>
+            <div class="qty-num" id="qty-display">1</div>
+            <button class="qty-btn" onclick="changeQty(1)">+</button>
+          </div>
+          <button class="btn-atc" onclick="addToCart()">🛒 Add to Cart</button>
+        </div>
+        <button class="btn-buynow" onclick="addToCart()">⚡ Buy It Now</button>
+
+        <div class="trust-grid">
+          <div class="trust-item">
+            <span class="trust-icon">🚚</span>
+            <div class="trust-text">Free Shipping<small>Orders above ₹499</small></div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">🔒</span>
+            <div class="trust-text">Secure Payment<small>UPI, Cards &amp; COD</small></div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">🔄</span>
+            <div class="trust-text">30-Day Guarantee<small>No questions asked</small></div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">👨‍⚕️</span>
+            <div class="trust-text">Vet Formulated<small>RCVS-certified team</small></div>
+          </div>
+        </div>
+
+        <div class="pdp-accordions">
+          <div class="acc-item open">
+            <div class="acc-head" onclick="toggleAcc(this)">
+              <h4>Why It Works</h4><span class="acc-arrow">▼</span>
+            </div>
+            <div class="acc-body" style="max-height:300px">
+              <div class="acc-body-inner">
+                <ul class="acc-list">
+                  <li>10 Billion live CFU per serving — clinically proven gut-health dose</li>
+                  <li>85% freeze-dried offal locks in taste, smell &amp; nutrients that kibble destroys</li>
+                  <li>Spore-forming strains survive India's heat &amp; humidity without refrigeration</li>
+                  <li>Eliminates bloating, loose stools &amp; hunger strikes within 7 days</li>
+                  <li>One scoop over any food — works with kibble, wet &amp; raw diets</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-head" onclick="toggleAcc(this)">
+              <h4>Full Ingredient List</h4><span class="acc-arrow">▼</span>
+            </div>
+            <div class="acc-body">
+              <div class="acc-body-inner">
+                Freeze-Dried Chicken Liver (45%), Freeze-Dried Chicken Heart (25%), Freeze-Dried Chicken Gizzard (15%), Bacillus coagulans (5B CFU/g), Lactobacillus acidophilus (3B CFU/g), Lactobacillus rhamnosus (2B CFU/g), Chicory Root Inulin (Prebiotic), Dried Blueberry Powder, Salmon Oil Powder.<br><br>
+                <strong>No fillers, grains, artificial preservatives, colours or flavours.</strong>
+              </div>
+            </div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-head" onclick="toggleAcc(this)">
+              <h4>Feeding Guide &amp; Storage</h4><span class="acc-arrow">▼</span>
+            </div>
+            <div class="acc-body">
+              <div class="acc-body-inner">
+                <ul class="acc-list">
+                  <li>Sprinkle ½ scoop (≈ 2g) over food once daily for cats up to 4 kg</li>
+                  <li>Use 1 full scoop for cats 4–8 kg; 1.5 scoops for cats above 8 kg</li>
+                  <li>Introduce gradually over 5–7 days to allow gut adjustment</li>
+                  <li>Store in a cool, dry place below 30°C — no refrigeration required</li>
+                  <li>Use within 60 days of opening for best potency</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ████████ HOW IT WORKS ████████ -->
-<section id="how" class="sec" aria-labelledby="how-h2">
-  <div class="wrap">
-    <div class="sec-header center reveal">
-      <div class="sec-eyebrow"><span class="pill pill-green">Simple 3-Step Method</span></div>
-      <h2 id="how-h2" class="d3 sec-title">How It Works</h2>
-      <p class="sec-body">No prep, no mixing, no drama. Your cat's gut transformation starts with a single sprinkle.</p>
+<!-- ─── TRUST STRIP ──────────────────────────────────────── -->
+<section id="trust-strip">
+  <div class="container">
+    <div class="trust-strip-grid">
+      <div class="ts-item reveal">
+        <div class="ts-icon">🥩</div>
+        <div class="ts-val">85%</div>
+        <div class="ts-desc">Real Offal<br>No Fillers</div>
+      </div>
+      <div class="ts-item reveal reveal-d1">
+        <div class="ts-icon">🦠</div>
+        <div class="ts-val">10B CFU</div>
+        <div class="ts-desc">Live Probiotic<br>Cultures</div>
+      </div>
+      <div class="ts-item reveal reveal-d2">
+        <div class="ts-icon">❄️</div>
+        <div class="ts-val">Freeze-Dried</div>
+        <div class="ts-desc">Nutrients &amp; Taste<br>Fully Preserved</div>
+      </div>
+      <div class="ts-item reveal reveal-d3">
+        <div class="ts-icon">👨‍⚕️</div>
+        <div class="ts-val">Vet-Endorsed</div>
+        <div class="ts-desc">RCVS Certified<br>Formula</div>
+      </div>
     </div>
-    <div class="steps">
-      <div class="step reveal">
-        <div class="step-num">1</div>
-        <h3 class="step-title">Sprinkle on Any Food</h3>
-        <p class="step-text">Open the resealable pouch and sprinkle ½ tsp of micro-crumble directly onto wet or dry food. The aroma does the rest — no mixing needed.</p>
+  </div>
+</section>
+
+<!-- ─── PRESS MARQUEE ────────────────────────────────────── -->
+<div id="press">
+  <div class="press-label">As seen in &amp; trusted by</div>
+  <div class="press-track">
+    <div class="press-item">🐾 The Hindu</div>
+    <div class="press-item">📰 Times of India</div>
+    <div class="press-item">🌿 India Pet World</div>
+    <div class="press-item">⭐ PetMD India</div>
+    <div class="press-item">🏥 VetXpert</div>
+    <div class="press-item">📺 NDTV Good Times</div>
+    <div class="press-item">💚 YourStory</div>
+    <div class="press-item">🐱 Catsters India</div>
+    <div class="press-item">🐾 The Hindu</div>
+    <div class="press-item">📰 Times of India</div>
+    <div class="press-item">🌿 India Pet World</div>
+    <div class="press-item">⭐ PetMD India</div>
+    <div class="press-item">🏥 VetXpert</div>
+    <div class="press-item">📺 NDTV Good Times</div>
+    <div class="press-item">💚 YourStory</div>
+    <div class="press-item">🐱 Catsters India</div>
+  </div>
+</div>
+
+<!-- ─── INGREDIENT SPOTLIGHT ─────────────────────────────── -->
+<section id="ingredients" class="sec" style="background:#fff">
+  <div class="container">
+    <div class="ing-grid">
+      <div class="ing-wheel reveal">
+        <svg class="wheel-svg" viewBox="0 0 380 380" fill="none">
+          <circle cx="190" cy="190" r="170" stroke="#E2E2E2" stroke-width="1"/>
+          <line x1="190" y1="60" x2="190" y2="112" stroke="#1DB954" stroke-width="2" stroke-dasharray="4 4"/>
+          <line x1="320" y1="190" x2="268" y2="190" stroke="#1DB954" stroke-width="2" stroke-dasharray="4 4"/>
+          <line x1="190" y1="320" x2="190" y2="268" stroke="#1DB954" stroke-width="2" stroke-dasharray="4 4"/>
+          <line x1="60" y1="190" x2="112" y2="190" stroke="#1DB954" stroke-width="2" stroke-dasharray="4 4"/>
+          <circle cx="190" cy="190" r="78" fill="#0B1F3A"/>
+          <circle cx="190" cy="190" r="68" fill="#162F5A"/>
+          <text x="190" y="182" text-anchor="middle" fill="#1DB954" font-family="'Sora',sans-serif" font-size="26" font-weight="800">85%</text>
+          <text x="190" y="200" text-anchor="middle" fill="white" font-family="'Inter',sans-serif" font-size="11" font-weight="600">Real Offal</text>
+          <text x="190" y="216" text-anchor="middle" fill="rgba(255,255,255,.5)" font-family="'Inter',sans-serif" font-size="10">No Fillers</text>
+          <circle cx="190" cy="42" r="38" fill="#E6F9EE" stroke="#1DB954" stroke-width="2"/>
+          <text x="190" y="36" text-anchor="middle" font-size="18">🦠</text>
+          <text x="190" y="52" text-anchor="middle" fill="#17A349" font-family="'Inter',sans-serif" font-size="10" font-weight="700">10B CFU</text>
+          <text x="190" y="64" text-anchor="middle" fill="#4B5563" font-family="'Inter',sans-serif" font-size="9">Probiotics</text>
+          <circle cx="338" cy="190" r="38" fill="#FFF7ED" stroke="#F97316" stroke-width="2"/>
+          <text x="338" y="184" text-anchor="middle" font-size="18">🥩</text>
+          <text x="338" y="200" text-anchor="middle" fill="#EA6A0C" font-family="'Inter',sans-serif" font-size="10" font-weight="700">Liver</text>
+          <text x="338" y="212" text-anchor="middle" fill="#4B5563" font-family="'Inter',sans-serif" font-size="9">45% of blend</text>
+          <circle cx="190" cy="338" r="38" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
+          <text x="190" y="332" text-anchor="middle" font-size="18">🌿</text>
+          <text x="190" y="348" text-anchor="middle" fill="#0284C7" font-family="'Inter',sans-serif" font-size="10" font-weight="700">Inulin</text>
+          <text x="190" y="360" text-anchor="middle" fill="#4B5563" font-family="'Inter',sans-serif" font-size="9">Prebiotic</text>
+          <circle cx="42" cy="190" r="38" fill="#FDF4FF" stroke="#A855F7" stroke-width="2"/>
+          <text x="42" y="184" text-anchor="middle" font-size="18">🐟</text>
+          <text x="42" y="200" text-anchor="middle" fill="#9333EA" font-family="'Inter',sans-serif" font-size="10" font-weight="700">Salmon Oil</text>
+          <text x="42" y="212" text-anchor="middle" fill="#4B5563" font-family="'Inter',sans-serif" font-size="9">Omega-3</text>
+        </svg>
       </div>
-      <div class="step reveal reveal-d1">
-        <div class="step-num">2</div>
-        <h3 class="step-title">Cat Eats — Probiotics Activate</h3>
-        <p class="step-text">Micro-encapsulated CFUs survive stomach acid and reach the large intestine alive. Good bacteria colonise and begin crowding out harmful strains.</p>
-      </div>
-      <div class="step reveal reveal-d2">
-        <div class="step-num">3</div>
-        <h3 class="step-title">See Results by Day 7</h3>
-        <p class="step-text">Better stool consistency, increased appetite, more energy, and a noticeably brighter coat. Most cat parents see improvement within a week.</p>
+      <div class="reveal reveal-d1">
+        <div class="sec-hd sec-hd-left">
+          <div class="eyebrow">Ingredient Transparency</div>
+          <h2>Every ingredient earns its place</h2>
+          <p style="color:var(--text2);margin-top:12px">We publish every ingredient, every percentage, every reason. No "proprietary blends" hiding low-quality fillers. Just real food that cats are biologically built to eat.</p>
+        </div>
+        <div class="ing-list">
+          <div class="ing-item">
+            <div class="ing-item-icon">🥩</div>
+            <div class="ing-item-text">
+              <h4>Freeze-Dried Chicken Offal (85%)</h4>
+              <p>Liver, heart &amp; gizzard — nature's multivitamin. Irresistible smell that even the pickiest cats can't refuse.</p>
+            </div>
+          </div>
+          <div class="ing-item">
+            <div class="ing-item-icon">🦠</div>
+            <div class="ing-item-text">
+              <h4>10B CFU Probiotic Blend</h4>
+              <p>Three spore-forming strains that survive India's heat. Rebalances gut flora and strengthens immunity within 7 days.</p>
+            </div>
+          </div>
+          <div class="ing-item">
+            <div class="ing-item-icon">🌿</div>
+            <div class="ing-item-text">
+              <h4>Chicory Root Inulin</h4>
+              <p>Prebiotic fibre that feeds the good bacteria. Works synergistically with the probiotics for maximum gut health benefit.</p>
+            </div>
+          </div>
+          <div class="ing-item">
+            <div class="ing-item-icon">🐟</div>
+            <div class="ing-item-text">
+              <h4>Salmon Oil Powder</h4>
+              <p>Omega-3 DHA &amp; EPA for a glossy coat, sharp eyesight &amp; reduced inflammation. Cold-pressed and micro-encapsulated.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ████████ SCIENCE / INGREDIENTS ████████ -->
-<section id="science" class="sec" aria-labelledby="sci-h2">
-  <div class="wrap">
-    <div class="sec-header center reveal">
-      <div class="sec-eyebrow"><span class="pill pill-green">The Science</span></div>
-      <h2 id="sci-h2" class="d3 sec-title">Three Pillars of Feline Gut Health</h2>
-      <p class="sec-body">Each ingredient choice is backed by feline nutrition research — nothing is filler.</p>
+<!-- ─── BENEFITS ──────────────────────────────────────────── -->
+<section id="benefits" class="sec">
+  <div class="container">
+    <div class="sec-hd reveal">
+      <div class="eyebrow">Why Pet Parents Love It</div>
+      <h2>Six reasons it actually works</h2>
+      <p>Unlike "all-in-one" supplements that spread thin, Feline Gut Boost has one job — fix your cat's gut — and it does it exceptionally well.</p>
     </div>
-    <div class="grid-3">
-
-      <div class="sci-card reveal">
-        <div class="sci-ico">
-          <svg viewBox="0 0 32 32" fill="none" stroke="var(--green3)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="16" cy="16" r="6"/>
-            <circle cx="16" cy="16" r="2"/>
-            <path d="M16 4v4M16 24v4M4 16h4M24 16h4"/>
-            <circle cx="8" cy="8" r="2"/><circle cx="24" cy="8" r="2"/>
-            <circle cx="8" cy="24" r="2"/><circle cx="24" cy="24" r="2"/>
-          </svg>
-        </div>
-        <h3 class="sci-title">Micro-Encapsulated Probiotics</h3>
-        <p class="sci-body">Our patent-pending acid-resistant protein shell locks 10 billion CFU per serving. Independent lab testing confirms &gt;85% viability past feline gastric pH of 1.5–2.0. These cultures actually reach the microbiome — unlike loose probiotic powders that die in the stomach.</p>
-        <div class="sci-tag">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 1v14M1 8h14"/></svg>
-          10 Billion CFU · Shelf-stable 18 months
-        </div>
+    <div class="ben-grid">
+      <div class="ben-card reveal">
+        <div class="ben-icon">🦠</div>
+        <div class="ben-title">10 Billion Live Probiotics</div>
+        <div class="ben-desc">Three clinically-studied strains that rebalance gut flora, reduce loose stools and restore normal digestion within one week of use.</div>
       </div>
-
-      <div class="sci-card reveal reveal-d1">
-        <div class="sci-ico">
-          <svg viewBox="0 0 32 32" fill="none" stroke="var(--green3)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M6 28l4-6 6 4 6-8 4 6"/>
-            <circle cx="16" cy="8" r="5"/>
-            <line x1="16" y1="3" x2="16" y2="1"/>
-            <line x1="21" y1="6" x2="23" y2="5"/>
-            <line x1="19" y1="12" x2="21" y2="14"/>
-          </svg>
-        </div>
-        <h3 class="sci-title">85% Organ-Meat Content</h3>
-        <p class="sci-body">Cats are obligate carnivores evolved to eat the whole prey animal. Our 85% organ-meat blend — chicken liver, heart, and kidney — delivers bioavailable taurine, B12, iron, and CoQ10 that muscle-meat-only recipes simply cannot match. No cereal, no pea protein, no compromise.</p>
-        <div class="sci-tag">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 1v14M1 8h14"/></svg>
-          Taurine · B12 · Iron · CoQ10
-        </div>
+      <div class="ben-card reveal reveal-d1">
+        <div class="ben-icon">🥩</div>
+        <div class="ben-title">85% Real Offal</div>
+        <div class="ben-desc">Cats are obligate carnivores. Offal is how they evolved to eat. Our 85% offal content triggers the hunger response even in the pickiest eaters.</div>
       </div>
-
-      <div class="sci-card reveal reveal-d2">
-        <div class="sci-ico">
-          <svg viewBox="0 0 32 32" fill="none" stroke="var(--green3)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="10" cy="10" r="3.5"/><circle cx="16" cy="7" r="2.5"/>
-            <circle cx="22" cy="10" r="3"/><circle cx="8" cy="17" r="2.5"/>
-            <circle cx="16" cy="17" r="4"/><circle cx="24" cy="17" r="2.5"/>
-            <circle cx="12" cy="23" r="3"/><circle cx="21" cy="23" r="3.5"/>
-          </svg>
-        </div>
-        <h3 class="sci-title">Micro-Crumble Texture</h3>
-        <p class="sci-body">Freeze-drying at −40°C preserves the cellular structure, creating a porous crumble that releases intense aroma on contact with moisture. The texture triggers a cat's natural hunting-feeding response — the same sensory cue that makes prey irresistible. Even confirmed picky eaters rarely refuse it.</p>
-        <div class="sci-tag">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 1v14M1 8h14"/></svg>
-          Freeze-dried · No additives
-        </div>
+      <div class="ben-card reveal reveal-d2">
+        <div class="ben-icon">✨</div>
+        <div class="ben-title">Irresistible Texture</div>
+        <div class="ben-desc">Freeze-drying preserves the crunchy, crumbly texture cats love. Sprinkle on any food to make even old kibble exciting again.</div>
       </div>
-
+      <div class="ben-card reveal">
+        <div class="ben-icon">👨‍⚕️</div>
+        <div class="ben-title">Vet-Endorsed Formula</div>
+        <div class="ben-desc">Developed with RCVS-certified veterinary nutritionists who specialize in feline gut health. Every ingredient, every dosage, peer-reviewed.</div>
+      </div>
+      <div class="ben-card reveal reveal-d1">
+        <div class="ben-icon">🌡️</div>
+        <div class="ben-title">Shelf-Stable in Indian Heat</div>
+        <div class="ben-desc">Spore-forming probiotic strains engineered to survive temperatures up to 40°C. No refrigeration required — ever. Stays potent for 18 months.</div>
+      </div>
+      <div class="ben-card reveal reveal-d2">
+        <div class="ben-icon">🚫</div>
+        <div class="ben-title">Zero Fillers or Grains</div>
+        <div class="ben-desc">No wheat, maize, soy, artificial flavours, colourings, or preservatives. Just real food ingredients your cat's body can actually use.</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ████████ COMPARISON TABLE ████████ -->
-<section id="compare" class="sec" aria-labelledby="cmp-h2">
-  <div class="wrap">
-    <div class="sec-header center reveal">
-      <div class="sec-eyebrow"><span class="pill pill-navy">Side-By-Side</span></div>
-      <h2 id="cmp-h2" class="d3 sec-title">How We Stack Up</h2>
-      <p class="sec-body">Not all toppers are equal. See exactly what makes the difference.</p>
+<!-- ─── RESULTS STATS ─────────────────────────────────────── -->
+<section id="results" class="sec">
+  <div class="container">
+    <div class="results-head reveal">
+      <div class="eyebrow" style="color:var(--green)">Real Results</div>
+      <h2>The numbers speak for themselves</h2>
+      <p>Data from 12,000+ verified customer orders and independent veterinary surveys conducted in 2024.</p>
     </div>
-    <div class="cmp-wrap reveal">
-      <table class="cmp-table" role="table" aria-label="Product comparison table">
+    <div class="results-grid">
+      <div class="result-item reveal">
+        <div class="result-num" data-count="4800">0</div>
+        <div class="result-label">Happy Cats &amp;<br>Counting</div>
+        <div class="result-sub">Verified purchasers</div>
+      </div>
+      <div class="result-item reveal reveal-d1">
+        <div class="result-num">7</div>
+        <div class="result-label">Days to<br>First Results</div>
+        <div class="result-sub">Average onset time</div>
+      </div>
+      <div class="result-item reveal reveal-d2">
+        <div class="result-num">4.8★</div>
+        <div class="result-label">Average<br>Star Rating</div>
+        <div class="result-sub">From 4,800+ reviews</div>
+      </div>
+      <div class="result-item reveal reveal-d3">
+        <div class="result-num">94%</div>
+        <div class="result-label">Would<br>Recommend</div>
+        <div class="result-sub">Post-purchase survey</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HOW IT WORKS ──────────────────────────────────────── -->
+<section id="how" class="sec" style="background:#fff">
+  <div class="container">
+    <div class="sec-hd reveal">
+      <div class="eyebrow">Simple Process</div>
+      <h2>Three steps to a happier, healthier cat</h2>
+      <p>No complicated routine. No separate feeding times. Just sprinkle, mix, and watch the transformation.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card reveal">
+        <div class="how-num">01</div>
+        <h3>Sprinkle on Any Food</h3>
+        <p>Add ½–1 scoop of Feline Gut Boost on top of your cat's existing food — kibble, wet food, or raw. The intense offal aroma does the rest.</p>
+      </div>
+      <div class="how-card reveal reveal-d1">
+        <div class="how-num">02</div>
+        <h3>Probiotics Go to Work</h3>
+        <p>10 billion live bacteria reach the gut and begin rebalancing the microbiome. Digestion improves, bloating reduces, and appetite returns within days.</p>
+      </div>
+      <div class="how-card reveal reveal-d2">
+        <div class="how-num">03</div>
+        <h3>Results You Can See</h3>
+        <p>By day 7 most cats are eating enthusiastically. By week 3 you'll notice a shinier coat, better energy levels, and consistent, well-formed stools.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BEFORE / AFTER ────────────────────────────────────── -->
+<section id="ba" class="sec">
+  <div class="container">
+    <div class="sec-hd reveal">
+      <div class="eyebrow">The Transformation</div>
+      <h2>Before Feline Gut Boost vs. After</h2>
+      <p>Thousands of Indian cat parents have shared what changed after switching. This is what they told us.</p>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-card before reveal">
+        <div class="ba-header">✗ Before</div>
+        <div class="ba-items">
+          <div class="ba-item"><div class="ba-dot">✗</div><span>Turns nose up at every food, even favourite treats</span></div>
+          <div class="ba-item"><div class="ba-dot">✗</div><span>Loose, foul-smelling stools — sometimes daily accidents</span></div>
+          <div class="ba-item"><div class="ba-dot">✗</div><span>Constant bloating and visible stomach discomfort after meals</span></div>
+          <div class="ba-item"><div class="ba-dot">✗</div><span>Dull, patchy coat with excessive shedding year-round</span></div>
+          <div class="ba-item"><div class="ba-dot">✗</div><span>Lethargic, hides away — no interest in play or interaction</span></div>
+          <div class="ba-item"><div class="ba-dot">✗</div><span>Expensive vet bills for recurring gut issues every few months</span></div>
+        </div>
+      </div>
+      <div class="ba-card after reveal reveal-d1">
+        <div class="ba-header">✓ After Feline Gut Boost</div>
+        <div class="ba-items">
+          <div class="ba-item"><div class="ba-dot">✓</div><span>Rushes to the bowl the moment food hits — no coaxing needed</span></div>
+          <div class="ba-item"><div class="ba-dot">✓</div><span>Firm, odourless stools and a noticeably cleaner litter box</span></div>
+          <div class="ba-item"><div class="ba-dot">✓</div><span>Relaxed, happy posture after meals — no more crouching in pain</span></div>
+          <div class="ba-item"><div class="ba-dot">✓</div><span>Dense, glossy coat that friends and family immediately notice</span></div>
+          <div class="ba-item"><div class="ba-dot">✓</div><span>Playful, curious, vocal — the personality you fell in love with returns</span></div>
+          <div class="ba-item"><div class="ba-dot">✓</div><span>Gut issues resolve and stay resolved — reducing vet visits significantly</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── REVIEWS ────────────────────────────────────────────── -->
+<section id="reviews" class="sec" style="background:#fff">
+  <div class="container">
+    <div class="sec-hd reveal" style="margin-bottom:40px">
+      <div class="eyebrow">Customer Reviews</div>
+      <h2>4,800+ happy cats and counting</h2>
+      <p>Real reviews from verified Indian cat parents. We never incentivize reviews or filter negative feedback.</p>
+    </div>
+    <div class="reviews-layout">
+      <div class="review-summary reveal">
+        <div class="rs-big">4.8</div>
+        <div class="rs-stars">★★★★★</div>
+        <div class="rs-count">Based on 4,847 reviews</div>
+        <div class="rs-bars">
+          <div class="rs-bar-row">
+            <div class="rs-bar-label">5 ★</div>
+            <div class="rs-bar-track"><div class="rs-bar-fill" style="width:78%"></div></div>
+            <div class="rs-bar-pct">78%</div>
+          </div>
+          <div class="rs-bar-row">
+            <div class="rs-bar-label">4 ★</div>
+            <div class="rs-bar-track"><div class="rs-bar-fill" style="width:14%"></div></div>
+            <div class="rs-bar-pct">14%</div>
+          </div>
+          <div class="rs-bar-row">
+            <div class="rs-bar-label">3 ★</div>
+            <div class="rs-bar-track"><div class="rs-bar-fill" style="width:5%"></div></div>
+            <div class="rs-bar-pct">5%</div>
+          </div>
+          <div class="rs-bar-row">
+            <div class="rs-bar-label">2 ★</div>
+            <div class="rs-bar-track"><div class="rs-bar-fill" style="width:2%"></div></div>
+            <div class="rs-bar-pct">2%</div>
+          </div>
+          <div class="rs-bar-row">
+            <div class="rs-bar-label">1 ★</div>
+            <div class="rs-bar-track"><div class="rs-bar-fill" style="width:1%"></div></div>
+            <div class="rs-bar-pct">1%</div>
+          </div>
+        </div>
+        <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--border)">
+          <div style="font-size:.78rem;font-weight:700;color:var(--text);margin-bottom:10px">Top Mentioned Benefits</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag-pill">Picky eater fixed ✓</span>
+            <span class="tag-pill">Loose stools gone ✓</span>
+            <span class="tag-pill">Shiny coat ✓</span>
+            <span class="tag-pill">More energy ✓</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-cards">
+        <div class="rev-card reveal">
+          <div class="rev-head">
+            <div class="rev-avatar">P</div>
+            <div class="rev-meta"><h4>Priya M.</h4><p>Mumbai · 3 months ago</p></div>
+          </div>
+          <div class="rev-stars">★★★★★</div>
+          <div class="rev-title">My picky Persian finally eats without coaxing!</div>
+          <div class="rev-body">Mochi is a 4-year-old Persian who has refused every premium food I've tried. Within 3 days of sprinkling Feline Gut Boost on her kibble, she was running to her bowl. By week 2 her stools normalized completely — no more liquid explosions at 3 AM. This product is genuinely life-changing for pet parents of picky cats.</div>
+          <div class="rev-verified">✓ Verified Purchase · Subscribed for 3 months</div>
+        </div>
+        <div class="rev-card reveal reveal-d1">
+          <div class="rev-head">
+            <div class="rev-avatar" style="background:#1DB954">R</div>
+            <div class="rev-meta"><h4>Rahul &amp; Simba</h4><p>Bengaluru · 5 months ago</p></div>
+          </div>
+          <div class="rev-stars">★★★★★</div>
+          <div class="rev-title">Vet recommended it and I'm so glad I tried it</div>
+          <div class="rev-body">Our vet at Cessna Lifeline mentioned probiotic toppers after Simba's third bout of IBD-like symptoms in a year. Found Feline Gut Boost and decided to try it. Six weeks later — zero flare-ups, formed stools every single day, and he's actually put on 200g of healthy weight. The quality is clearly not cheap like some other Indian brands.</div>
+          <div class="rev-verified">✓ Verified Purchase</div>
+        </div>
+        <div class="rev-card reveal reveal-d2">
+          <div class="rev-head">
+            <div class="rev-avatar" style="background:#F97316">A</div>
+            <div class="rev-meta"><h4>Ananya K.</h4><p>Delhi · 1 month ago</p></div>
+          </div>
+          <div class="rev-stars">★★★★★</div>
+          <div class="rev-title">The coat improvement alone is worth it</div>
+          <div class="rev-body">I got this mainly to fix Tiger's digestion but honestly the most visible change has been his coat. It went from dull and patchy to literally gleaming in 3 weeks. He's also much more active and playful — like a kitten again at age 6. The freeze-dried texture makes it so easy to use; just crumble over any food and done. Will never stop subscribing.</div>
+          <div class="rev-verified">✓ Verified Purchase · Subscribed for 1 month</div>
+        </div>
+        <div class="rev-card reveal">
+          <div class="rev-head">
+            <div class="rev-avatar" style="background:#0EA5E9">S</div>
+            <div class="rev-meta"><h4>Sunita &amp; Biscuit</h4><p>Hyderabad · 2 months ago</p></div>
+          </div>
+          <div class="rev-stars">★★★★☆</div>
+          <div class="rev-title">Took 10 days to work but totally worth it</div>
+          <div class="rev-body">Biscuit is a senior cat (9 years) so I wasn't expecting miracles, but after about 10 days the difference in her stool consistency was clear. She's also eating more consistently now. The only reason for 4 stars instead of 5 is that the pouch zipper could be sturdier — but the product itself is excellent. Customer service also responded within 2 hours when I had a question.</div>
+          <div class="rev-verified">✓ Verified Purchase</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── COMPARISON TABLE ───────────────────────────────────── -->
+<section id="compare" class="sec">
+  <div class="container">
+    <div class="sec-hd reveal">
+      <div class="eyebrow">How We Compare</div>
+      <h2>Not all toppers are created equal</h2>
+      <p>See how Feline Gut Boost stacks up against generic cat supplements and international brands.</p>
+    </div>
+    <div class="comp-wrap reveal">
+      <table class="comp-table">
         <thead>
           <tr>
-            <th style="text-align:left;width:34%"></th>
-            <th class="col-us">
-              <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
-                <span style="font-size:1.1rem">🐱</span>
-                <span>Feline Gut Boost</span>
-              </div>
-            </th>
-            <th>Regular Toppers</th>
-            <th>Dry Kibble</th>
+            <th>Feature</th>
+            <th class="us">Feline Gut Boost</th>
+            <th>Generic Brands</th>
+            <th>International Imports</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Live stable probiotics</td>
-            <td class="col-us"><span class="ico-yes">✓</span></td>
-            <td><span class="ico-no">✗</span></td>
-            <td><span class="ico-no">✗</span></td>
+            <td>CFU Count</td>
+            <td class="us">10 Billion CFU <span class="check">✓</span></td>
+            <td>1–2 Billion CFU</td>
+            <td>5–8 Billion CFU</td>
           </tr>
           <tr>
-            <td>85%+ organ-meat content</td>
-            <td class="col-us"><span class="ico-yes">✓</span></td>
-            <td><span class="ico-no">✗</span></td>
-            <td><span class="ico-no">✗</span></td>
+            <td>Real Offal Content</td>
+            <td class="us">85% Real Offal <span class="check">✓</span></td>
+            <td>0–20% (mostly filler)</td>
+            <td>30–50%</td>
           </tr>
           <tr>
-            <td>Micro-crumble texture</td>
-            <td class="col-us"><span class="ico-yes">✓</span></td>
-            <td><span class="ico-no">✗</span></td>
-            <td><span class="ico-no">✗</span></td>
+            <td>Heat-Stable Strains</td>
+            <td class="us"><span class="check">✓ Yes (spore-forming)</span></td>
+            <td><span class="cross">✗ No</span></td>
+            <td><span class="part">⚠ Partial</span></td>
           </tr>
           <tr>
-            <td>Zero cereal fillers</td>
-            <td class="col-us"><span class="ico-yes">✓</span></td>
-            <td><span class="ico-no">✗</span></td>
-            <td><span class="ico-no">✗</span></td>
+            <td>No Refrigeration</td>
+            <td class="us"><span class="check">✓ Yes</span></td>
+            <td><span class="cross">✗ Requires fridge</span></td>
+            <td><span class="cross">✗ Requires fridge</span></td>
           </tr>
           <tr>
-            <td>Vet-endorsed formula</td>
-            <td class="col-us"><span class="ico-yes">✓</span></td>
-            <td><span class="ico-no">✗</span></td>
-            <td><span class="ico-no">✗</span></td>
+            <td>India-formulated</td>
+            <td class="us"><span class="check">✓ Yes</span></td>
+            <td><span class="part">⚠ Generic</span></td>
+            <td><span class="cross">✗ Imported</span></td>
           </tr>
           <tr>
-            <td>Shelf-stable without refrigeration</td>
-            <td class="col-us"><span class="ico-yes">✓</span></td>
-            <td>Partial</td>
-            <td><span class="ico-yes" style="color:var(--muted)">✓</span></td>
+            <td>Prebiotic Included</td>
+            <td class="us"><span class="check">✓ Chicory Inulin</span></td>
+            <td><span class="cross">✗ No</span></td>
+            <td><span class="part">⚠ Sometimes</span></td>
           </tr>
           <tr>
-            <td>Results within 7 days</td>
-            <td class="col-us"><span class="ico-yes">✓</span></td>
-            <td><span class="ico-no">✗</span></td>
-            <td><span class="ico-no">✗</span></td>
+            <td>Vet-Formulated</td>
+            <td class="us"><span class="check">✓ RCVS Certified</span></td>
+            <td><span class="cross">✗ No</span></td>
+            <td><span class="part">⚠ Varies</span></td>
+          </tr>
+          <tr>
+            <td>Price per month</td>
+            <td class="us"><strong>₹339 (subscribe)</strong></td>
+            <td>₹150–250</td>
+            <td>₹800–1,500</td>
+          </tr>
+          <tr>
+            <td>Money-back Guarantee</td>
+            <td class="us"><span class="check">✓ 30 Days</span></td>
+            <td><span class="cross">✗ No</span></td>
+            <td><span class="part">⚠ Varies</span></td>
           </tr>
         </tbody>
       </table>
@@ -1032,530 +1136,309 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
   </div>
 </section>
 
-<!-- ████████ TESTIMONIALS ████████ -->
-<section id="testi" class="sec" aria-labelledby="testi-h2">
-  <div class="wrap">
-    <div class="sec-header center reveal">
-      <div class="sec-eyebrow"><span class="pill pill-white" style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.7)">Real Reviews</span></div>
-      <h2 id="testi-h2" class="d3 sec-title" style="color:#fff">What Cat Parents Are Saying</h2>
-      <p class="sec-body" style="color:rgba(255,255,255,.5)">Verified purchasers across India share their cats' transformations.</p>
+<!-- ─── FAQ ────────────────────────────────────────────────── -->
+<section id="faq" class="sec" style="background:#fff">
+  <div class="container">
+    <div class="sec-hd reveal">
+      <div class="eyebrow">Common Questions</div>
+      <h2>Everything you need to know</h2>
     </div>
-
-    <div class="testi-slider-vp">
-      <div class="testi-track" id="tTrack">
-
-        <div class="testi-card">
-          <div class="rating-row">
-            <div class="stars"><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span></div>
+    <div class="faq-grid">
+      <div>
+        <div class="faq-item open">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>How quickly will I see results?</span><span class="faq-arr">▼</span>
           </div>
-          <p class="testi-quote">My Persian, Mochi, refused every single brand I tried for four months. Day 3 of Feline Gut Boost — she cleaned her bowl. By day 7 her stools had completely firmed up. I genuinely cried. This product changed our life.</p>
-          <div class="testi-footer">
-            <div class="testi-ava">PR</div>
-            <div>
-              <div class="testi-name">Priya Ramachandran</div>
-              <div class="testi-meta">Bengaluru · Persian cat mom · Verified buyer</div>
-            </div>
-            <span class="testi-badge">✓ Verified</span>
+          <div class="faq-a" style="max-height:300px">
+            <div class="faq-a-inner">Most cats show improved appetite within 3–5 days and normalized digestion within 7 days. Coat improvements typically become visible in 2–3 weeks as the gut-skin axis responds. Senior cats or those with chronic conditions may take 2–3 weeks to show full results.</div>
           </div>
         </div>
-
-        <div class="testi-card">
-          <div class="rating-row">
-            <div class="stars"><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span></div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Can I use it alongside prescription food or medication?</span><span class="faq-arr">▼</span>
           </div>
-          <p class="testi-quote">Our vet recommended this post-Simba's IBD diagnosis. The probiotic encapsulation data is legitimate — I checked the lab reports. Two months in, zero flare-ups, coat is brilliant. The subscription pricing is a no-brainer.</p>
-          <div class="testi-footer">
-            <div class="testi-ava">AS</div>
-            <div>
-              <div class="testi-name">Arjun Sharma</div>
-              <div class="testi-meta">Mumbai · Maine Coon parent · Verified buyer</div>
-            </div>
-            <span class="testi-badge">✓ Verified</span>
+          <div class="faq-a">
+            <div class="faq-a-inner">Yes — Feline Gut Boost is formulated to work alongside prescription diets, wet food, raw diets, and kibble. If your cat is on antibiotics or immunosuppressants, consult your vet first. We recommend spacing probiotics 2 hours apart from any antibiotic dose.</div>
           </div>
         </div>
-
-        <div class="testi-card">
-          <div class="rating-row">
-            <div class="stars"><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span></div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Does it need refrigeration in Indian summers?</span><span class="faq-arr">▼</span>
           </div>
-          <p class="testi-quote">I've tried four other toppers. This is the only one where the smell alone has my two cats running to their bowls. The texture is different — they actively look for it. Three months as a subscriber and I'll never stop.</p>
-          <div class="testi-footer">
-            <div class="testi-ava">TN</div>
-            <div>
-              <div class="testi-name">Tanvi Nair</div>
-              <div class="testi-meta">Chennai · Multi-cat household · Verified buyer</div>
-            </div>
-            <span class="testi-badge">✓ Verified</span>
+          <div class="faq-a">
+            <div class="faq-a-inner">No refrigeration needed. We specifically use spore-forming probiotic strains (Bacillus coagulans) that are engineered to survive temperatures up to 40°C — far more stable than lactobacillus strains used in most foreign-made products. Store in a cool, dry place away from direct sunlight.</div>
           </div>
         </div>
-
-        <div class="testi-card">
-          <div class="rating-row">
-            <div class="stars"><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span></div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>What if my cat doesn't like it?</span><span class="faq-arr">▼</span>
           </div>
-          <p class="testi-quote">Kaju is 14 years old and had chronic soft stools. After two weeks on this topper, formed stools every day. Her vet was genuinely surprised at her last check-up. Senior cat parents — please try this.</p>
-          <div class="testi-footer">
-            <div class="testi-ava">RK</div>
-            <div>
-              <div class="testi-name">Ritika Kapoor</div>
-              <div class="testi-meta">Delhi · Senior cat carer · Verified buyer</div>
-            </div>
-            <span class="testi-badge">✓ Verified</span>
+          <div class="faq-a">
+            <div class="faq-a-inner">Our 30-day happiness guarantee means you get a full refund, no questions asked, if you're not completely satisfied. Simply email us with your order number. We process refunds within 3 business days. In our experience, over 97% of cats accept the topper within 7 days.</div>
           </div>
         </div>
-
-        <div class="testi-card">
-          <div class="rating-row">
-            <div class="stars"><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span><span class="star star-sm">★</span></div>
-          </div>
-          <p class="testi-quote">As a small-animal vet, I'm conservative about supplements. I reviewed the CFU stability data and the organ-meat sourcing. I now recommend this to every client who brings in a cat with GI complaints. The science holds up.</p>
-          <div class="testi-footer">
-            <div class="testi-ava">DM</div>
-            <div>
-              <div class="testi-name">Dr. Deepa Menon BVSc, MVSc</div>
-              <div class="testi-meta">Hyderabad · Small Animal Vet · Verified professional</div>
-            </div>
-            <span class="testi-badge">✓ Vet</span>
-          </div>
-        </div>
-
       </div>
-    </div>
-
-    <div class="slider-ctrl" role="group" aria-label="Testimonial slider controls">
-      <button class="s-btn" id="tPrev" aria-label="Previous testimonial">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15,18 9,12 15,6"/></svg>
-      </button>
-      <div class="s-dots" id="tDots" role="tablist" aria-label="Testimonial pages"></div>
-      <button class="s-btn" id="tNext" aria-label="Next testimonial">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9,18 15,12 9,6"/></svg>
-      </button>
+      <div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Is it safe for kittens and senior cats?</span><span class="faq-arr">▼</span>
+          </div>
+          <div class="faq-a">
+            <div class="faq-a-inner">Yes, Feline Gut Boost is safe for cats of all life stages from 8 weeks of age. For kittens under 6 months, use ¼ scoop per day. For senior cats (7+ years), start with ¼ scoop for the first 2 weeks then increase to the standard dose to allow gradual gut adaptation.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>How does the subscription work?</span><span class="faq-arr">▼</span>
+          </div>
+          <div class="faq-a">
+            <div class="faq-a-inner">When you subscribe, you save 15% and receive a pouch every 30 days automatically. You can pause, skip, or cancel at any time with no penalty — no lock-in period. Manage your subscription from your account dashboard or simply email us. Payment is charged only when each order ships.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>What is the shelf life?</span><span class="faq-arr">▼</span>
+          </div>
+          <div class="faq-a">
+            <div class="faq-a-inner">18 months from manufacture date when sealed. Once opened, use within 60 days for optimal probiotic potency. The airtight zipper pouch maintains freshness — always press out excess air before sealing. Do not use a wet spoon to scoop as moisture affects the shelf life.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Is the product manufactured in India?</span><span class="faq-arr">▼</span>
+          </div>
+          <div class="faq-a">
+            <div class="faq-a-inner">Yes. Feline Gut Boost is 100% manufactured in India at an FSSAI-licensed, GMP-certified facility in Bengaluru. We source our offal from FSSAI-approved chicken processing plants. Our probiotic strains are imported from certified European microbiological labs and blended locally.</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ████████ GUARANTEE ████████ -->
-<section id="guarantee" class="sec" aria-labelledby="guar-h2">
-  <div class="wrap">
-    <div class="guar-inner">
-      <div class="guar-badge-wrap reveal">
-        <div class="guar-badge" role="img" aria-label="30-day money back guarantee">
-          <div class="num">30</div>
-          <div class="day">DAY</div>
-          <div class="back">MONEY BACK</div>
+<!-- ─── GUARANTEE + CTA ────────────────────────────────────── -->
+<section id="guarantee">
+  <div class="container">
+    <div class="guar-grid">
+      <div class="guar-badge reveal">
+        <div class="guar-badge-circle">
+          <span style="font-size:2.2rem;line-height:1">🛡️</span>
+          <strong>30</strong>
+          <small>DAY GUARANTEE</small>
         </div>
       </div>
       <div class="guar-text reveal reveal-d1">
-        <h2 id="guar-h2" class="d3"><span>Zero-Risk</span><br>Guarantee</h2>
-        <p class="guar-body">We're so confident in Feline Gut Boost that we offer a full 30-day, no-questions-asked refund. If your cat doesn't show improvement in appetite, digestion, or coat quality within 30 days — we refund every rupee. No hoops. No hold times. Just a single WhatsApp message.</p>
-        <div class="guar-checks">
-          <div class="guar-chk"><div class="guar-chk-ico"><svg viewBox="0 0 10 10" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2"/></svg></div> Full refund, no partial store credits</div>
-          <div class="guar-chk"><div class="guar-chk-ico"><svg viewBox="0 0 10 10" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2"/></svg></div> No return shipping required</div>
-          <div class="guar-chk"><div class="guar-chk-ico"><svg viewBox="0 0 10 10" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2"/></svg></div> Processed within 48 hours</div>
-        </div>
+        <div class="eyebrow" style="color:var(--green)">Risk-Free Trial</div>
+        <h2>We bet you'll see results.<br>If not — full refund.</h2>
+        <p>We're so confident in Feline Gut Boost that we offer a complete 30-day money-back guarantee with zero paperwork. If your cat doesn't eat better, digest better, and feel better within 30 days — you pay nothing.</p>
+        <ul>
+          <li>Full refund, no questions asked</li>
+          <li>No return shipping required</li>
+          <li>Processed within 3 business days</li>
+          <li>Applies to both one-time and first subscription order</li>
+        </ul>
+      </div>
+      <div class="guar-action reveal reveal-d2">
+        <button class="btn-main" onclick="addToCart()">Try Risk-Free — ₹339</button>
+        <button class="btn-ghost" onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})">Read Our FAQs</button>
+        <div class="guar-note">Subscribe &amp; save 15% · Cancel anytime</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ████████ PRICING ████████ -->
-<section id="pricing" class="sec" aria-labelledby="price-h2">
-  <div class="wrap">
-    <div class="sec-header center reveal">
-      <div class="sec-eyebrow"><span class="pill pill-orange">Limited Offer</span></div>
-      <h2 id="price-h2" class="d3 sec-title">Choose Your Plan</h2>
-      <p class="sec-body">Start with a risk-free trial or save with a monthly subscription your cat will look forward to.</p>
-    </div>
-
-    <!-- Countdown timer -->
-    <div class="timer-bar reveal">
-      <div class="timer-text">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-        Free shipping offer ends in:
-      </div>
-      <div class="timer-blocks">
-        <div class="t-blk"><div class="t-num" id="tH">00</div><div class="t-lbl">hrs</div></div>
-        <div class="t-sep">:</div>
-        <div class="t-blk"><div class="t-num" id="tM">00</div><div class="t-lbl">min</div></div>
-        <div class="t-sep">:</div>
-        <div class="t-blk"><div class="t-num" id="tS">00</div><div class="t-lbl">sec</div></div>
-      </div>
-    </div>
-
-    <div class="price-grid">
-
-      <!-- Trial card -->
-      <div class="pcard reveal">
-        <div class="pcard-plan">One-Time Purchase</div>
-        <div class="pcard-name">Trial Sachet</div>
-        <div class="pcard-price">
-          <span class="pcard-cur">₹</span>
-          <span class="pcard-val">399</span>
+<!-- ─── FOOTER ─────────────────────────────────────────────── -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:12px;color:#fff">
+          <div class="logo-mark"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M10 2C6 2 3 5 3 10s3 8 7 8 7-3 7-8-3-8-7-8zm0 13c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z" fill="#fff"/><circle cx="10" cy="10" r="2.5" fill="#fff"/></svg></div>
+          Feline Gut Boost
         </div>
-        <div class="pcard-per">60g · Single pouch · ~30 servings</div>
-        <div class="pcard-divider"></div>
-        <ul class="pcard-feats" aria-label="Trial sachet features">
-          <li class="pcard-feat"><span class="pf-ico"><svg viewBox="0 0 10 10" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2"/></svg></span>60g freeze-dried probiotic topper</li>
-          <li class="pcard-feat"><span class="pf-ico"><svg viewBox="0 0 10 10" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2"/></svg></span>Resealable, shelf-stable pouch</li>
-          <li class="pcard-feat"><span class="pf-ico"><svg viewBox="0 0 10 10" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2"/></svg></span>Feeding guide &amp; vet tips included</li>
-          <li class="pcard-feat"><span class="pf-ico"><svg viewBox="0 0 10 10" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2"/></svg></span>30-day satisfaction guarantee</li>
-        </ul>
-        <a href="#" class="btn btn-ghost" style="width:100%;color:var(--navy);border-color:var(--border);background:transparent;" aria-label="Buy trial sachet for ₹399">
-          Get Trial Sachet
-        </a>
-        <p class="pcard-note">Ships within 24 hrs · No subscription</p>
-      </div>
-
-      <!-- Subscription card -->
-      <div class="pcard featured reveal reveal-d1" aria-label="Featured plan">
-        <div class="pcard-badge">Best Value — Save 15%</div>
-        <div class="pcard-plan">Monthly Subscription</div>
-        <div class="pcard-name">Gut Health Bundle</div>
-        <div class="pcard-was">₹798 / month</div>
-        <div class="pcard-price">
-          <span class="pcard-cur">₹</span>
-          <span class="pcard-val">679</span>
-        </div>
-        <div class="pcard-per">2 × 60g pouches · Delivered every 30 days</div>
-        <div class="pcard-save">You save ₹119 every month</div>
-        <div class="pcard-divider"></div>
-        <ul class="pcard-feats" aria-label="Subscription features">
-          <li class="pcard-feat"><span class="pf-ico"><svg viewBox="0 0 10 10" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2"/></svg></span>2 × 60g pouches (≈60 servings)</li>
-          <li class="pcard-feat"><span class="pf-ico"><svg viewBox="0 0 10 10" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2"/></svg></span>Free priority shipping every month</li>
-          <li class="pcard-feat"><span class="pf-ico"><svg viewBox="0 0 10 10" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2"/></svg></span>WhatsApp gut health check-ins</li>
-          <li class="pcard-feat"><span class="pf-ico"><svg viewBox="0 0 10 10" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2"/></svg></span>Exclusive subscriber-only discounts</li>
-          <li class="pcard-feat"><span class="pf-ico"><svg viewBox="0 0 10 10" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2"/></svg></span>Skip, pause, or cancel anytime</li>
-        </ul>
-        <a href="#" class="btn btn-green" style="width:100%;font-size:1rem;padding:17px;" aria-label="Subscribe and save ₹119 per month">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Subscribe &amp; Save ₹119/mo
-        </a>
-        <p class="pcard-note">Auto-renews monthly · Cancel anytime · No fees</p>
-      </div>
-
-    </div>
-
-    <div class="price-trust reveal">
-      <div class="pt-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>SSL Secured Checkout</div>
-      <div class="pt-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>30-Day Guarantee</div>
-      <div class="pt-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16,8 20,8 23,11 23,16 16,16"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>Free Pan-India Delivery</div>
-      <div class="pt-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>Vet Endorsed</div>
-    </div>
-  </div>
-</section>
-
-<!-- ████████ FAQ ████████ -->
-<section id="faq" class="sec" aria-labelledby="faq-h2">
-  <div class="wrap-sm">
-    <div class="sec-header center reveal">
-      <div class="sec-eyebrow"><span class="pill pill-green">Got Questions?</span></div>
-      <h2 id="faq-h2" class="d3 sec-title">Frequently Asked</h2>
-    </div>
-    <div class="faq-list" role="list">
-
-      <div class="faq-item" role="listitem">
-        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
-          <span class="faq-q-text">How do I use Feline Gut Boost and how much should I give?</span>
-          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round"><path d="M2 6h8M6 2v8"/></svg></span>
-        </div>
-        <div class="faq-ans" role="region">
-          <div class="faq-ans-inner">Sprinkle ½ teaspoon (≈2g) directly onto your cat's wet or dry food once daily — no mixing required. The micro-crumble clings to food naturally. For kittens under 6 months, use ¼ teaspoon. Most cats show improved appetite within 3 days and digestive improvements by day 7.</div>
+        <p>India's first vet-formulated, heat-stable probiotic topper for cats. Made with love for Indian pet parents.</p>
+        <div class="footer-social">
+          <a href="#" class="f-social" aria-label="Instagram">📸</a>
+          <a href="#" class="f-social" aria-label="Facebook">📘</a>
+          <a href="#" class="f-social" aria-label="YouTube">📺</a>
+          <a href="#" class="f-social" aria-label="WhatsApp">💬</a>
         </div>
       </div>
-
-      <div class="faq-item" role="listitem">
-        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
-          <span class="faq-q-text">Are the probiotics actually alive? Do they survive stomach acid?</span>
-          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round"><path d="M2 6h8M6 2v8"/></svg></span>
-        </div>
-        <div class="faq-ans" role="region">
-          <div class="faq-ans-inner">Yes. Our micro-encapsulation technology wraps each colony in an acid-resistant protein shell. Third-party lab testing confirms &gt;85% CFU viability past feline gastric pH (1.5–2.0). Cultures remain shelf-stable at room temperature for 18 months — no refrigeration needed. This is fundamentally different from loose probiotic powders.</div>
-        </div>
-      </div>
-
-      <div class="faq-item" role="listitem">
-        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
-          <span class="faq-q-text">My cat is extremely picky. What if they refuse it?</span>
-          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round"><path d="M2 6h8M6 2v8"/></svg></span>
-        </div>
-        <div class="faq-ans" role="region">
-          <div class="faq-ans-inner">The 85% organ-meat content produces an intense, meaty aroma that activates a cat's natural hunting-feeding response — even confirmed picky eaters rarely refuse it. We suggest starting with a tiny pinch mixed into a favourite wet food, increasing to a full serving over 3–4 days. If your cat still refuses within 7 days, our guarantee covers a full refund.</div>
-        </div>
-      </div>
-
-      <div class="faq-item" role="listitem">
-        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
-          <span class="faq-q-text">How do subscriptions work — can I pause or cancel easily?</span>
-          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round"><path d="M2 6h8M6 2v8"/></svg></span>
-        </div>
-        <div class="faq-ans" role="region">
-          <div class="faq-ans-inner">Subscriptions auto-renew monthly and can be paused, skipped, or cancelled at any time via your account dashboard or by sending a single WhatsApp message. No lock-in periods, no cancellation fees, no retention calls. We ship 3 days before your billing date to ensure no gap in supply.</div>
-        </div>
-      </div>
-
-      <div class="faq-item" role="listitem">
-        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
-          <span class="faq-q-text">Is it safe for kittens, senior cats, or cats on medication?</span>
-          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="var(--green3)" stroke-width="2.5" stroke-linecap="round"><path d="M2 6h8M6 2v8"/></svg></span>
-        </div>
-        <div class="faq-ans" role="region">
-          <div class="faq-ans-inner">Safe for cats aged 3 months and above, including seniors. For cats on immunosuppressants, antibiotics, or chemotherapy, consult your vet before introducing any probiotic supplement — as a general precaution, not because of a known interaction. Our team is available on WhatsApp to discuss your cat's specific needs.</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ████████ FOOTER ████████ -->
-<footer id="footer" aria-label="Site footer">
-  <div class="wrap">
-    <div class="footer-top">
-      <div>
-        <a href="#" class="nav-logo" style="display:inline-flex;" aria-label="Feline Gut Boost home">
-          <div class="nav-logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="13" rx="7" ry="8.5"/><ellipse cx="6" cy="8" rx="3.5" ry="4.5"/><ellipse cx="18" cy="8" rx="3.5" ry="4.5"/><ellipse cx="3.5" cy="5" rx="2" ry="2.5"/><ellipse cx="20.5" cy="5" rx="2" ry="2.5"/></svg></div>
-          <span class="nav-name" style="color:#fff;">Feline <span>Gut Boost</span></span>
-        </a>
-        <p class="footer-brand-tagline">India's first freeze-dried probiotic cat food topper. Made with love for picky, sensitive, and gut-troubled cats.</p>
-        <div class="footer-social" role="list" aria-label="Social media links">
-          <a href="#" class="soc-ic" aria-label="Instagram" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="rgba(255,255,255,.65)" stroke="none"/></svg></a>
-          <a href="#" class="soc-ic" aria-label="Facebook" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="1.8" stroke-linecap="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-          <a href="#" class="soc-ic" aria-label="YouTube" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="1.8" stroke-linecap="round"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02"/></svg></a>
-        </div>
-      </div>
-
-      <div>
-        <h3 class="footer-col-h">Shop</h3>
-        <ul class="footer-links">
-          <li><a href="#pricing" class="footer-lnk">Trial Sachet — ₹399</a></li>
-          <li><a href="#pricing" class="footer-lnk">Monthly Subscription</a></li>
-          <li><a href="#science" class="footer-lnk">Ingredients</a></li>
-          <li><a href="#how" class="footer-lnk">How It Works</a></li>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#ingredients">Ingredients</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#compare">Compare</a></li>
         </ul>
       </div>
-
-      <div>
-        <h3 class="footer-col-h">Policies</h3>
-        <ul class="footer-links">
-          <li><a href="#" class="footer-lnk">Shipping Policy</a></li>
-          <li><a href="#" class="footer-lnk">Returns &amp; Refunds</a></li>
-          <li><a href="#" class="footer-lnk">Privacy Policy</a></li>
-          <li><a href="#" class="footer-lnk">Terms of Service</a></li>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#">Feeding Guide</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
-
-      <div>
-        <h3 class="footer-col-h">Contact</h3>
-        <ul class="footer-links">
-          <li><span class="footer-lnk" style="cursor:default">Mon–Sat · 9am–6pm IST</span></li>
-          <li>
-            <a href="https://wa.me/919876543210?text=Hi%2C%20I%20have%20a%20question%20about%20Feline%20Gut%20Boost" class="wa-cta" target="_blank" rel="noopener noreferrer">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 2.008C6.476 2.008 2.008 6.476 2.008 12c0 1.921.504 3.72 1.38 5.28L2 22l4.845-1.27A9.944 9.944 0 0012 21.992c5.523 0 9.992-4.468 9.992-9.992S17.523 2.008 12 2.008z"/></svg>
-              Chat on WhatsApp
-            </a>
-          </li>
-          <a href="mailto:hello@felinegutboost.in" class="footer-mail">hello@felinegutboost.in</a>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Vets</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+          <li><a href="#">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
-
     <div class="footer-bottom">
-      <span>© 2026 Feline Gut Boost. Made in India with love for cats.</span>
-      <div class="footer-certs">
-        <span class="fcert">FSSAI</span>
-        <span class="fcert">BIS Certified</span>
-        <span class="fcert">Cruelty-Free</span>
-      </div>
-      <div style="display:flex;gap:20px;flex-wrap:wrap">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Sitemap</a>
+      <p>© 2024 Feline Gut Boost. All rights reserved. FSSAI Lic. No. 10024999000123</p>
+      <div class="footer-payment">
+        <span class="pay-badge">UPI</span>
+        <span class="pay-badge">VISA</span>
+        <span class="pay-badge">MASTERCARD</span>
+        <span class="pay-badge">COD</span>
+        <span class="pay-badge">EMI</span>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- ████████ STICKY BUY BAR ████████ -->
-<div id="sticky-bar" role="complementary" aria-label="Quick purchase">
-  <div class="sb-left">
-    <div>
-      <div class="sb-prod">Feline Gut Boost</div>
-      <div style="display:flex;gap:3px;margin-top:1px" aria-label="5 stars" aria-hidden="true">
-        <span class="star" style="font-size:.75rem">★</span><span class="star" style="font-size:.75rem">★</span><span class="star" style="font-size:.75rem">★</span><span class="star" style="font-size:.75rem">★</span><span class="star" style="font-size:.75rem">★</span>
+<!-- ─── STICKY MOBILE ATC ──────────────────────────────────── -->
+<div id="sticky-atc">
+  <div class="container">
+    <div class="satc-inner">
+      <div class="satc-info">
+        <div class="satc-name">Feline Gut Boost · 100g</div>
+        <div class="satc-price">₹339 <span style="font-size:.72rem;color:var(--text3);text-decoration:line-through;font-weight:400">₹399</span></div>
       </div>
+      <button class="satc-btn" onclick="addToCart()">Add to Cart</button>
     </div>
-    <div class="sb-price">From ₹399</div>
-  </div>
-  <div class="sb-right">
-    <a href="#pricing" class="btn btn-green btn-sm">Buy Now</a>
   </div>
 </div>
 
-<!-- ████████ SCRIPTS ████████ -->
+<!-- ─── CART TOAST ─────────────────────────────────────────── -->
+<div id="cart-toast" style="position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:12px 24px;border-radius:var(--r);font-size:.85rem;font-weight:600;z-index:400;opacity:0;transition:all .3s;pointer-events:none;white-space:nowrap">
+  ✓ Added to cart!
+</div>
+
 <script>
-/* ── Nav transparency ─────────────────────────── */
+// Hamburger / drawer
+const drawer = document.getElementById('nav-drawer');
+document.getElementById('hamburger').onclick = function(){ drawer.classList.add('open'); document.body.style.overflow='hidden'; };
+document.getElementById('drawer-close').onclick = closeDrawer;
+document.getElementById('drawer-overlay').onclick = closeDrawer;
+function closeDrawer(){ drawer.classList.remove('open'); document.body.style.overflow=''; }
+
+// Countdown
 (function(){
-  const nav = document.getElementById('nav');
-  function update(){
-    if(window.scrollY > 60) nav.classList.add('solid');
-    else nav.classList.remove('solid');
-  }
-  window.addEventListener('scroll', update, {passive:true});
-  update();
-})();
-
-/* ── Sticky bar ───────────────────────────────── */
-(function(){
-  const bar = document.getElementById('sticky-bar');
-  const hero = document.getElementById('hero');
-  function update(){
-    const heroBottom = hero.getBoundingClientRect().bottom;
-    if(heroBottom < 0) bar.classList.add('show');
-    else bar.classList.remove('show');
-  }
-  window.addEventListener('scroll', update, {passive:true});
-})();
-
-/* ── Scroll reveal ────────────────────────────── */
-(function(){
-  const els = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } });
-  }, {threshold: 0.12});
-  els.forEach(el => io.observe(el));
-})();
-
-/* ── Animated counters ────────────────────────── */
-(function(){
-  const targets = [
-    {id:'c1', target:4800, suffix:'', decimals:0},
-    {id:'c2', target:4.8, suffix:'', decimals:1},
-    {id:'c3', target:85, suffix:'', decimals:0},
-    {id:'c4', target:10, suffix:'', decimals:0}
-  ];
-  const el = document.getElementById('c1');
-  if(!el) return;
-  const io = new IntersectionObserver(entries => {
-    if(!entries[0].isIntersecting) return;
-    io.disconnect();
-    targets.forEach(({id, target, decimals}) => {
-      const span = document.getElementById(id);
-      if(!span) return;
-      const dur = 1600, steps = 50, interval = dur/steps;
-      let step = 0;
-      const timer = setInterval(() => {
-        step++;
-        const val = target * (step/steps);
-        span.textContent = decimals ? val.toFixed(decimals) : Math.floor(val).toLocaleString('en-IN');
-        if(step >= steps){ span.textContent = decimals ? target.toFixed(decimals) : target.toLocaleString('en-IN'); clearInterval(timer); }
-      }, interval);
-    });
-  }, {threshold:0.5});
-  io.observe(document.getElementById('stats'));
-})();
-
-/* ── Testimonial slider ───────────────────────── */
-(function(){
-  const track  = document.getElementById('tTrack');
-  const dotsEl = document.getElementById('tDots');
-  const prev   = document.getElementById('tPrev');
-  const next   = document.getElementById('tNext');
-  if(!track) return;
-  const cards = track.querySelectorAll('.testi-card');
-  const total = cards.length;
-  let cur = 0, timer = null;
-
-  function perView(){
-    if(window.innerWidth >= 960) return 3;
-    if(window.innerWidth >= 640) return 2;
-    return 1;
-  }
-  function maxIdx(){ return Math.max(0, total - perView()); }
-
-  function buildDots(){
-    dotsEl.innerHTML = '';
-    for(let i = 0; i <= maxIdx(); i++){
-      const d = document.createElement('button');
-      d.className = 's-dot' + (i === cur ? ' on' : '');
-      d.setAttribute('role','tab');
-      d.setAttribute('aria-label','Slide '+(i+1));
-      d.setAttribute('aria-selected', i === cur ? 'true' : 'false');
-      d.addEventListener('click', () => { stopAuto(); goTo(i); startAuto(); });
-      dotsEl.appendChild(d);
-    }
-  }
-
-  function goTo(idx){
-    cur = Math.max(0, Math.min(idx, maxIdx()));
-    const w = cards[0].getBoundingClientRect().width + 24;
-    track.style.transform = `translateX(-${cur * w}px)`;
-    dotsEl.querySelectorAll('.s-dot').forEach((d,i) => {
-      d.classList.toggle('on', i === cur);
-      d.setAttribute('aria-selected', i === cur ? 'true' : 'false');
-    });
-  }
-
-  function startAuto(){ timer = setInterval(() => goTo(cur >= maxIdx() ? 0 : cur+1), 5000); }
-  function stopAuto(){ clearInterval(timer); }
-
-  prev.addEventListener('click', () => { stopAuto(); goTo(cur-1); startAuto(); });
-  next.addEventListener('click', () => { stopAuto(); goTo(cur+1); startAuto(); });
-
-  let tx = 0;
-  track.addEventListener('touchstart', e => { tx = e.touches[0].clientX; stopAuto(); }, {passive:true});
-  track.addEventListener('touchend',   e => {
-    const dx = e.changedTouches[0].clientX - tx;
-    if(Math.abs(dx) > 40) goTo(dx < 0 ? cur+1 : cur-1);
-    startAuto();
-  }, {passive:true});
-
-  buildDots();
-  startAuto();
-  window.addEventListener('resize', () => { buildDots(); goTo(cur); }, {passive:true});
-})();
-
-/* ── FAQ accordion ────────────────────────────── */
-(function(){
-  document.querySelectorAll('.faq-item').forEach(item => {
-    const q = item.querySelector('.faq-q');
-    const a = item.querySelector('.faq-ans');
-    q.addEventListener('click', () => {
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(o => {
-        o.classList.remove('open');
-        o.querySelector('.faq-ans').style.maxHeight = '0';
-        o.querySelector('.faq-q').setAttribute('aria-expanded','false');
-      });
-      if(!isOpen){
-        item.classList.add('open');
-        a.style.maxHeight = a.scrollHeight + 'px';
-        q.setAttribute('aria-expanded','true');
-      }
-    });
-    q.addEventListener('keydown', e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); q.click(); } });
-  });
-})();
-
-/* ── Countdown timer ──────────────────────────── */
-(function(){
-  const h = document.getElementById('tH');
-  const m = document.getElementById('tM');
-  const s = document.getElementById('tS');
-  if(!h) return;
-  // Fixed end time: 4 hours from page load
-  const end = Date.now() + 4*60*60*1000;
+  var end = Date.now() + 3*3600000 + 59*60000 + 47000;
   function tick(){
-    const rem = Math.max(0, end - Date.now());
-    const hh = Math.floor(rem/3600000);
-    const mm = Math.floor((rem%3600000)/60000);
-    const ss = Math.floor((rem%60000)/1000);
-    h.textContent = String(hh).padStart(2,'0');
-    m.textContent = String(mm).padStart(2,'0');
-    s.textContent = String(ss).padStart(2,'0');
-    if(rem > 0) requestAnimationFrame(tick);
+    var diff = Math.max(0, end - Date.now());
+    var h = Math.floor(diff/3600000), m = Math.floor((diff%3600000)/60000), s = Math.floor((diff%60000)/1000);
+    document.getElementById('cd-h').textContent = String(h).padStart(2,'0');
+    document.getElementById('cd-m').textContent = String(m).padStart(2,'0');
+    document.getElementById('cd-s').textContent = String(s).padStart(2,'0');
+    if(diff > 0) setTimeout(tick, 1000);
   }
   tick();
 })();
+
+// Qty
+var qty = 1;
+function changeQty(delta){
+  qty = Math.max(1, Math.min(10, qty + delta));
+  document.getElementById('qty-display').textContent = qty;
+}
+
+// Purchase toggle
+document.querySelectorAll('input[name="purchase"]').forEach(function(r){
+  r.addEventListener('change', function(){
+    var isSub = document.getElementById('sub').checked;
+    document.getElementById('price-display').textContent = isSub ? '₹339' : '₹399';
+    var orig = document.getElementById('price-orig');
+    orig.style.display = isSub ? '' : 'none';
+  });
+});
+
+// Size
+function selectSize(btn){
+  document.querySelectorAll('.size-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+}
+
+// Gallery thumbs
+function selectThumb(el){
+  document.querySelectorAll('.g-thumb').forEach(function(t){ t.classList.remove('active'); });
+  el.classList.add('active');
+}
+
+// PDP accordion
+function toggleAcc(head){
+  var item = head.closest('.acc-item');
+  var body = item.querySelector('.acc-body');
+  var inner = item.querySelector('.acc-body-inner');
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.acc-item').forEach(function(i){
+    i.classList.remove('open');
+    i.querySelector('.acc-body').style.maxHeight = '0';
+  });
+  if(!isOpen){ item.classList.add('open'); body.style.maxHeight = inner.scrollHeight + 'px'; }
+}
+
+// FAQ
+function toggleFaq(head){
+  var item = head.closest('.faq-item');
+  var a = item.querySelector('.faq-a');
+  var inner = item.querySelector('.faq-a-inner');
+  var isOpen = item.classList.contains('open');
+  item.classList.toggle('open');
+  a.style.maxHeight = isOpen ? '0' : inner.scrollHeight + 'px';
+}
+
+// Cart toast
+function addToCart(){
+  var toast = document.getElementById('cart-toast');
+  toast.style.opacity = '1';
+  toast.style.transform = 'translateX(-50%) translateY(0)';
+  setTimeout(function(){ toast.style.opacity='0'; toast.style.transform='translateX(-50%) translateY(20px)'; }, 2500);
+}
+
+// Sticky ATC
+var stickyAtc = document.getElementById('sticky-atc');
+var heroEl = document.getElementById('hero');
+window.addEventListener('scroll', function(){
+  if(heroEl.getBoundingClientRect().bottom < 0){ stickyAtc.classList.add('visible'); }
+  else { stickyAtc.classList.remove('visible'); }
+}, {passive:true});
+
+// Scroll reveal
+var revealObs = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+}, {threshold:.1, rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){ revealObs.observe(el); });
+
+// Counter animation
+var counterObs = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      var el = e.target;
+      var target = parseInt(el.dataset.count);
+      var start = 0, step = target / 60;
+      var timer = setInterval(function(){
+        start += step;
+        if(start >= target){ el.textContent = target.toLocaleString('en-IN') + '+'; clearInterval(timer); }
+        else { el.textContent = Math.floor(start).toLocaleString('en-IN'); }
+      }, 16);
+      counterObs.unobserve(el);
+    }
+  });
+}, {threshold:.5});
+document.querySelectorAll('[data-count]').forEach(function(el){ counterObs.observe(el); });
 </script>
 </body>
 </html>
