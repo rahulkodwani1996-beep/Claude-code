@@ -23,7 +23,8 @@
       "package": "com.pawpack.app"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "publicPath": "/Claude-code/"
     },
     "scheme": "pawpack"
   }
