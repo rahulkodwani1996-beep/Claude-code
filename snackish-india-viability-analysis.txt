@@ -1,0 +1,191 @@
+============================================================
+SNACKISH (eatsnackish.com) - DECODE + INDIA VIABILITY ASSESSMENT
+============================================================
+Is it viable to build a Snackish-style "permissibly indulgent,
+functional snack" for India? Analysis, competitive map, and a
+unit-economics model.
+
+Compiled June 2026 from public sources (company site, press,
+market research). Figures are the latest publicly reported and
+should be treated as directional.
+
+
+------------------------------------------------------------
+1. WHAT SNACKISH IS
+------------------------------------------------------------
+A "better-for-you" potato chip brand launched in 2026 across
+North America by Tara Bosch - the founder who built SmartSweets
+and exited for a reported ~$360M (2020). The promise: "Eat Chips
+Every Day" / "the feel-good chip" - permission to snack on a
+familiar indulgence that's been re-engineered to be functional.
+
+PRODUCT SPEC (the whole pitch)
+  - ~8g protein/serving - from potato protein (a complete protein)
+  - 4g prebiotic fiber per bag - gut-health angle
+  - Kettle-cooked in 100% avocado oil - rides anti-seed-oil narrative
+  - Bold flavors (BBQ Bash, Jalapeno Kick, CA-exclusive Best Dressed)
+
+BUSINESS MODEL (as important as the product)
+  - Capital:        Self-funded off the SmartSweets exit. No dilution,
+                    full control - but a founder luxury.
+  - Manufacturing:  Vertically integrated - own 65,000 sq ft "Snacktory."
+                    Margin/R&D/quality moat; capex-heavy.
+  - Distribution:   Mass retail day one - Target (US), Loblaws + Whole
+                    Foods (CA). Straight to scale, not a slow D2C burn.
+  - Marketing:      Creators (Kat Stickler, Mikayla Matthews, etc.) as
+                    EQUITY OWNERS - aligned influence flywheel.
+  - Brand:          "SmartSweets founder's next yellow bag" = built-in
+                    distribution.
+
+MACRO TRENDS IT RIDES
+  Protein-maxxing + fiber as "the next protein" + the seed-oil
+  backlash, wrapped in indulgent-but-guiltless snacking.
+
+
+------------------------------------------------------------
+2. THE VERDICT ON INDIA
+------------------------------------------------------------
+The category opportunity is real and growing, but a near-carbon-copy
+of Snackish is the WRONG build. A localized "permissibly indulgent,
+high-protein/high-fiber Indian snack" IS viable - provided you adapt
+the ingredient, price, and go-to-market, and avoid copying the
+capital-intensive vertical-integration model early.
+
+
+------------------------------------------------------------
+3. WHAT WORKS IN INDIA'S FAVOR
+------------------------------------------------------------
+  - Large, fast-growing market. India healthy snacks ~ $4.4B (2025)
+    -> ~$8.2B by 2033 (~8% CAGR). Snacking is culturally central.
+  - Protein obsession rising fast. India is protein-deficient;
+    "high-protein" is now one of the most powerful shelf claims.
+    This is the single strongest angle.
+  - Category already validated locally: The Whole Truth, Open Secret,
+    Yoga Bar, Farmley, Beyond Snack, True Elements, Origin Nutrition
+    (pea-protein "Mojo Pops"), Marico's Saffola Munchiez.
+  - Native hero ingredient exists: makhana. High-protein, low-cal,
+    diabetic-friendly, trending (Rs 9.3B -> ~Rs 20B by 2034).
+  - Mature D2C + quick-commerce rails (Blinkit/Zepto/Amazon/BigBasket).
+
+
+------------------------------------------------------------
+4. WHAT BREAKS IF YOU COPY SNACKISH LITERALLY
+------------------------------------------------------------
+  1. Avocado oil doesn't translate. Imported, expensive, and the
+     anti-seed-oil narrative barely registers in India. Destroys the
+     price point for zero persuasion. -> Use cold-pressed groundnut /
+     coconut / ghee-roasted framing.
+  2. Price sensitivity is brutal. Premium imported-spec chip lands at
+     Rs 150-250/bag - a tiny SEC-A niche. Mass expectation is Rs 10-50.
+     -> Build a good/better/best ladder with a Rs 20-50 trial pack.
+  3. The "Snacktory" is a billionaire-founder luxury. Bosch self-funded
+     off a $360M exit. -> Start contract-manufactured / asset-light,
+     prove demand + repeat, integrate later.
+  4. Mass-retail-from-day-one needs deep pockets + distribution muscle.
+     -> Realistic path: D2C + quick-commerce -> modern trade -> general
+     trade.
+  5. Format & flavor must be Indian. Western BBQ/Jalapeno underperform
+     vs Peri-Peri, Pudina, Masala, Cheese, Tangy Tomato. Product probably
+     shouldn't be a potato chip at all - baked/popped makhana, roasted
+     chana/lentil chips, ragi/millet, or pea-protein crisps carry the
+     health claim more credibly and cheaply.
+
+
+------------------------------------------------------------
+5. COMPETITIVE MAP (INDIA)
+------------------------------------------------------------
+  Player                  Owned wedge                    Format
+  ----------------------  -----------------------------  -------------------
+  The Whole Truth         "No-BS, read-the-label"        Protein bars/snacks
+  Open Secret             "What your mom would approve"  Nut/roasted, cookies
+  Farmley                 Dry fruits + makhana           Makhana, trail mixes
+  Beyond Snack            Branded Kerala banana chips    Banana chips
+  Yoga Bar (ITC)          Mainstream healthy bars/oats   Bars, muesli
+  Origin Nutrition        Pea-protein high-protein chip  Mojo Pops
+  Marico (Saffola         Ragi/makhana chips +           Chips
+   Munchiez)               FMCG muscle
+
+  READ: the lane is filling fast - validation AND warning. The unowned
+  wedge: "the chip you can actually eat daily - 10g protein + gut fiber,
+  Rs 40, in your favourite masala flavor." Lead PROTEIN first, gut-fiber
+  second, at an accessible price the incumbents' premium SKUs don't hold.
+
+
+------------------------------------------------------------
+6. UNIT-ECONOMICS SKETCH (illustrative, single ~30g SKU)
+------------------------------------------------------------
+Directional model to pressure-test feasibility - NOT a forecast.
+Plug real quotes before committing.
+
+Scenario: Rs 40 MRP, makhana/pulse-based protein crisp, contract-made
+
+  Line                          D2C / Quick-commerce   Modern/General Trade
+  ----------------------------  ---------------------  --------------------
+  MRP                           Rs 40                  Rs 40
+  Net realization to brand      ~Rs 34 (platform/QC    ~Rs 26-28 (distributor
+                                 take ~15%)             + retailer ~30-35%)
+  COGS (ingredients+pack+coman) ~Rs 14-16              ~Rs 14-16
+  GROSS MARGIN                  ~Rs 18-20 (~55%)       ~Rs 10-12 (~40%)
+  Logistics/fulfilment          ~Rs 3-5 (D2C heavy)    bundled in distributor
+  CONTRIBUTION before mktg      ~Rs 14-16              ~Rs 10-12
+
+The make-or-break number is CAC. D2C/QC marketing for a Rs 40 impulse
+snack can easily exceed first-order contribution - so the model ONLY
+works on repeat purchase. Implications:
+  - Need multipack AOV (Rs 150-300 baskets) to make D2C CAC pay back.
+  - Quick-commerce is the realistic primary channel (impulse +
+    replenishment + lower CAC than pure D2C ads).
+  - Modern/general trade = volume but thin margin; viable only at scale.
+  - Margin discipline lives in COGS - which is exactly why avocado oil /
+    imported potato protein kills the model, and why a native, cheap,
+    credible protein source (makhana, chana, pea) is the right call.
+
+Break-even instinct: at ~55% D2C/QC gross margin, viable if blended
+repeat rate is high (40%+ at 60-90 days) and CAC is recovered within
+~2 orders. If taste/repeat is weak, no marketing saves it.
+
+
+------------------------------------------------------------
+7. HOW I'D BUILD IT
+------------------------------------------------------------
+  1. Hero ingredient: makhana or pulse/pea-protein crisp - native,
+     credible, cost-effective. NOT potato-in-avocado-oil.
+  2. Lead claim: high protein first, gut fiber second.
+  3. Flavors: Indian-first - Peri-Peri, Pudina, Masala, Cheese, Tangy.
+  4. Price ladder: Rs 20-50 trial -> multipacks; accessible-premium,
+     not imported-premium.
+  5. Go-to-market: D2C + quick-commerce + creator-equity (Snackish's
+     smartest, most copyable move) -> then modern trade.
+  6. Asset-light first; vertical integration only after demand + repeat
+     are proven.
+
+
+------------------------------------------------------------
+8. RISKS TO UNDERWRITE BEFORE BUILDING
+------------------------------------------------------------
+  - Crowded competitive set - need a sharp, unowned protein wedge.
+  - Thin snacking margins at low price points - repeat rate is everything.
+  - Taste at price - can you hit a genuinely tasty high-protein crisp at
+    Rs 40 with a clean deck? The real technical risk.
+  - CAC vs impulse-price mismatch - quick-commerce + multipacks mitigate.
+
+BOTTOM LINE: Viable as an India-native reinterpretation, not a clone.
+The tailwinds (snacking + protein + gut health + quick-commerce) are
+genuinely strong. Nail taste + price + a sharp protein wedge, lean on
+quick-commerce and creator-equity, stay asset-light - and it's a yes.
+
+
+------------------------------------------------------------
+SOURCES
+------------------------------------------------------------
+  - Snackish site:        https://eatsnackish.com/
+  - About:                https://eatsnackish.com/pages/about-us
+  - Canada:               https://eatsnackish.ca/
+  - PRNewswire launch:    https://www.prnewswire.com/news-releases/she-built-smartsweets-for-her-grandmother-now-shes-building-snackish-for-her-daughter-302802725.html
+  - Retail Insider:       https://retail-insider.com/retail-insider/2026/06/eat-chips-every-day-snackish-launches-across-north-america/
+  - BriefGlance strategy: https://briefglance.com/articles/beyond-the-bag-snackishs-recipe-for-a-modern-cpg-empire
+  - BCBusiness:           https://bcbusiness.ca/business/retail/tara-bosch-snackish-launch-vancouver/
+  - CNBC (fiber trend):   https://www.cnbc.com/2025/12/12/fibermaxxing-high-fiber-foods-pepsi-nestle-olipop.html
+  - IMARC healthy snacks: https://www.imarcgroup.com/india-healthy-snacks-market
+  - IMARC makhana:        https://www.imarcgroup.com/india-makhana-market
+  - Grand View snacks:    https://www.grandviewresearch.com/horizon/outlook/healthy-snacks-market/india
